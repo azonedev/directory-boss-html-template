@@ -1,84 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap fonts -->
-    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap fonts -->
+	<link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
 
-    <!-- main css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    
-    <header>
-      <div class="p-3"></div>
-      <div class="fluid">
-      <nav class="navbar navbar-expand-lg navbar-light container">
-        <div class="container-fluid">
-          <!-- logo / brand-name -->
-          <a class="col-4 navbar-brand" href="#"><h2>DirectoryBoss</h2></a>
-          <!-- collapse options -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+	<!-- main css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Directory Boss</title>
+</head>
+<body>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- menu -->
-            <ul class="col-6 navbar-nav d-flex justify-content-center">
+	<header>
+		<div class="fluid  fixed-top bg-white py-1">
+			<nav class="navbar navbar-expand-lg navbar-light container">
+				<div class="container-fluid">
+					<!-- logo / brand-name -->
+					<a class="col-4 navbar-brand" href="#">
+						<span class="logo">
+							<div class="text">
+								<span class="h2 main-color">DirectoryBoss</span>
+							</div>
+							<!--  <div class="logo">
+								<img src="#" alt="">
+							</div> -->
+						</span>
+					</a>
 
-              <!-- middle menu -->
-              <li class="nav-item"><a href="#" class="nav-link active">Write a Review</a></li>
-              <li class="nav-item"><a href="#" class="nav-link active">For Buiness</a></li>
-              <li class="nav-item"><a href="#" class="nav-link active">Categories</a></li>
-              <li class="nav-item"><a href="#" class="nav-link active" id="search"><i class="bi bi-search"></i></a></li>
-              <!-- / middle menu -->
+					<!-- collapse options -->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-            </ul>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<!-- menu -->
+						<ul class="col-md-6 navbar-nav d-flex justify-content-center middle-menu">
 
-            <ul class="col-6 navbar-nav d-flex justify-content-end">
+							<!-- middle menu -->
+							<li class="nav-item"><a href="#" class="nav-link active fancy-link">Write a Review</a></li>
+							<li class="nav-item"><a href="#" class="nav-link active fancy-link">For Buiness</a></li>
+							<li class="nav-item"><a href="#" class="nav-link active fancy-link">Categories</a></li>
+              <!-- search -->
+							<li class="nav-item">
+                <a href="#" class="nav-link active fancy-link" onclick="openSearch()" id="search">
+                  <i class="bi bi-search"></i>
+                </a>
+              </li>
+              <!-- full-screen box-->
+                <div id="myOverlay" class="overlay">
+                  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
+                    <i class="bi bi-file-x"></i>
+                  </span>
+                  <div class="overlay-content">
+                    <form action="action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                  </div>
+                </div>
+              <!-- /full-scren box -->
+              <!--/ search -->
+							<!-- / middle menu -->
 
-              <!-- right menu -->
-              <li class="nav-item"><a href="#" class="nav-link active">Sign In</a></li>
-              <li class="nav-item"><a href="#" class="nav-link active">Sign Up</a></li>
-              <!-- /right menu -->
+						</ul>
 
-            </ul>
-            <!-- /menu -->
-          </div>
-        </div>
-      </nav>
-      </div>
-    </header>
+						<ul class="col-md-6 navbar-nav d-flex justify-content-end right-menu">
 
-    <div class="fluid welcome w-100vh">
-      <div class="container">
-        <div class="row row-cols-md-2">
-          <!-- welcome-left -->
-            <div class="welcome-search py-5">
-              <div class="display-6 top-content py-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="small-content py-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae?
-              </div>
-            </div>
-          <!-- welcome-left -->
-          <!-- welcome right -->
-          <div class="welcome-image">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Assumenda in et voluptates ab quod sit id quas animi, inventore aut ex pariatur asperiores eius ipsam rem iusto dolores beatae totam.</div>
-          <!-- /welcome right -->
-        </div>
-      </div>
-    </div>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ex numquam quae praesentium, aspernatur eaque illo harum est vero rerum! Laboriosam ea inventore voluptatibus eligendi explicabo officia vero impedit eaque!</p>
+							<!-- right menu -->
+							<li class="nav-item sign-in"><a href="#" class="nav-link active fancy-link underline">Sign In</a></li>
+							<li class="nav-item px-2 sign-up"><a href="#" class="nav-link active primary-btn">Sign Up</a></li>
+							<!-- /right menu -->
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+						</ul>
+						<!-- /menu -->
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-  </body>
+	<div class="fluid welcome main-bg text-white">
+		<div class="container">
+			<div class="row row-cols-md-2">
+				<!-- welcome-left -->
+				<div class="welcome-search py-5">
+					<div class="display-6 top-content py-4">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					</div>
+					<div class="small-content py-3">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae?
+					</div>
+				</div>
+				<!-- welcome-left -->
+				<!-- welcome right -->
+				<div class="welcome-image">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Assumenda in et
+					voluptates
+					ab quod sit id quas animi, inventore aut ex pariatur asperiores eius ipsam rem iusto dolores beatae
+					totam.
+				</div>
+				<!-- /welcome right -->
+			</div>
+		</div>
+	</div>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ex numquam quae praesentium, aspernatur eaque
+		illo
+		harum est vero rerum! Laboriosam ea inventore voluptatibus eligendi explicabo officia vero impedit eaque!</p>
+
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>
