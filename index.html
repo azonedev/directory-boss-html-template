@@ -10,6 +10,9 @@
 	<!-- Bootstrap fonts -->
 	<link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
 
+  <!-- wow js for animate -->
+  <link rel="stylesheet" href="assets/bundle/wowjs/animate.css"> <!-- only for home page -->
+
 	<!-- main css -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Directory Boss</title>
@@ -17,7 +20,7 @@
 <body>
 
 	<header>
-		<div class="fluid  fixed-top bg-white py-1">
+		<div class="fluid  fixed-top bg-white py-1 fadeInDown" data-wow-delay="0.2s">
 			<nav class="navbar navbar-expand-lg navbar-light container">
 				<div class="container-fluid">
 					<!-- logo / brand-name -->
@@ -85,36 +88,145 @@
 		</div>
 	</header>
 
-	<div class="fluid welcome main-bg text-white">
-		<div class="container">
-			<div class="row row-cols-md-2">
-				<!-- welcome-left -->
-				<div class="welcome-search py-5">
-					<div class="display-6 top-content py-4">
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					</div>
-					<div class="small-content py-3">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae?
-					</div>
-				</div>
-				<!-- welcome-left -->
-				<!-- welcome right -->
-				<div class="welcome-image">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Assumenda in et
-					voluptates
-					ab quod sit id quas animi, inventore aut ex pariatur asperiores eius ipsam rem iusto dolores beatae
-					totam.
-				</div>
-				<!-- /welcome right -->
-			</div>
-		</div>
-	</div>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ex numquam quae praesentium, aspernatur eaque
-		illo
-		harum est vero rerum! Laboriosam ea inventore voluptatibus eligendi explicabo officia vero impedit eaque!</p>
+  <div class="header-clear"></div>
+
+  <!-- section - welcome -->
+  <div class="welcome-wrap">
+  	<section class="fluid welcome main-bg text-white">
+  		<div class="container">
+  			<div class="row row-cols-md-2 pt-5">
+  				<!-- welcome-left -->
+  				<div class="col-md-7 welcome-search py-5 wow slideInLeft">
+  					<div class="display-6 top-content fw-normal">
+  						Lorem ipsum, dolor sit amet, conse ctetur adipisicing elit. Reprehe nderit, sapiente.
+  					</div>
+  					<div class="small-content py-3 deep-blue">
+  						<h5>Read reviews, Write reviews, Find companies.</h5>
+  					</div>
+            <div class="big-search">
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control py-3" placeholder="Search for a business or category ...">
+                  <span class="input-group-text" id="basic-addon2">
+                    <button type="submit" class="btn py-2 px-3">Search</button>
+                  </span>
+                </div>
+              </form>
+            </div>
+  				</div>
+  				<!-- welcome-left -->
+  				<!-- welcome right -->
+  				<div class="col-md-5 welcome-image wow slideInRight">
+            <img src="assets/images/search-bg.svg" alt="">
+  				</div>
+  				<!-- /welcome right -->
+  			</div>
+  		</div>
+  	</section>
+    <div class="carve">
+      <img src="assets/images/pro-wave.svg" width="100%" alt="">
+    </div>
+  </div>
+  <!-- /welcome-wrap -->
+
+  <section class="category fluid bg-white">
+    <div class="container shadow">
+      <div class="category-area text-center p-3 row row-cols-lg-10 row-cols-md-8">
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/cloud.png"/>
+            <br>
+            <p class="pt-1">Cloud</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/amazon.png"/>
+            <br>
+            <p class="pt-1">amazon</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/google.png"/>
+            <br>
+            <p class="pt-1">google</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/microsoft.png"/>
+            <br>
+            <p class="pt-1">microsoft</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/apple.png"/>
+            <br>
+            <p class="pt-1">apple</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/tencent.png"/>
+            <br>
+            <p class="pt-1">tencent</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/share-tune.png"/>
+            <br>
+            <p class="pt-1">Share Tune</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/puzzle.png"/>
+            <br>
+            <p class="pt-1">puzzle</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/idea.png"/>
+            <br>
+            <p class="pt-1">idea leader</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/more.png"/>
+            <br>
+            <p class="pt-1">more</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="padding">
+    <div class="p-5"></div>
+  </section>
+
+  <div>
+   <!--  <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Quod ipsa unde consequuntur fugiat aspernatur totam ducimus omnis mollitia eaque distinctio ullam numquam, laudantium aliquam veniam libero recusandae? Quas repellat veritatis, a aliquid. Eum ex earum sunt facilis? Beatae soluta, labore alias, veritatis numquam doloribus provident, iusto iste libero consequatur accusantium explicabo, sapiente expedita voluptate quibusdam. Distinctio, at repudiandae deleniti est, laborum quis molestiae temporibus optio, cumque beatae tempora iste numquam quas illo, unde nam. Accusamus repellat quam fugiat molestiae temporibus ducimus ab rerum dolorum expedita dicta. Eos rerum, consequuntur unde beatae ipsum omnis sequi quia soluta veritatis. Quasi voluptatem excepturi dolor velit, doloremque accusantium corrupti, commodi laboriosam a, exercitationem quam necessitatibus ad dolorem eveniet sunt numquam atque totam dolore, harum perspiciatis distinctio esse consequatur eaque quidem dolorum. Numquam quaerat sint nemo aperiam blanditiis facere, exercitationem praesentium mollitia fugit. Ut consectetur possimus, quod pariatur ea vel hic veniam alias animi facere, quisquam cum iure fugit veritatis magni voluptatem asperiores quas ab, molestiae qui quidem eum dolorum magnam blanditiis? Accusantium harum dicta, labore. Cupiditate at optio minus. Ab a, nesciunt error modi expedita provident voluptate accusantium ad assumenda natus mollitia ut reiciendis recusandae tempore velit. Laborum maiores sapiente, ea facilis incidunt quidem distinctio minima, neque ex culpa natus dolorem eum, illum! Esse amet ipsam cumque unde, perspiciatis, sunt veniam doloribus veritatis praesentium assumenda molestiae quia delectus nam necessitatibus facere similique inventore expedita enim dolorum itaque velit tempore autem! Maiores, saepe sequi ad odio! Quasi corrupti mollitia optio voluptatem. Illum eos enim facilis quibusdam est aut natus ad asperiores ea. Labore architecto mollitia temporibus illum consectetur enim esse perferendis voluptatum corrupti natus assumenda nulla quaerat est facere quas consequuntur, optio illo ipsa, asperiores quae blanditiis, alias dolorem? Sequi nam nihil laboriosam quam, alias? Quam temporibus dignissimos, nesciunt pariatur numquam cum modi, consequuntur, voluptas quidem magnam minus esse. Modi velit quo pariatur dolore amet earum id iste, nam laudantium voluptatem quas, alias cum numquam sint molestias error voluptatibus eos magnam molestiae nobis rem suscipit quidem sequi. Sapiente omnis est labore ut, aliquid maiores placeat vel ullam fuga officiis nihil harum incidunt vitae alias vero natus enim at nulla asperiores ex numquam repellendus, saepe perferendis libero! Iusto obcaecati tempore qui vel sapiente quos repellendus, repellat labore voluptatibus esse a eius assumenda eveniet hic odit ipsa, dignissimos nihil unde architecto excepturi! Itaque perspiciatis, debitis aliquam sed obcaecati. Delectus voluptatibus doloremque facere deserunt, amet quo at aliquid, vitae nesciunt incidunt, laudantium tempore alias, debitis recusandae officiis mollitia exercitationem! Esse, modi fugit voluptatem, animi nam qui debitis eveniet explicabo! Ipsum eum ducimus quas ipsam, eveniet cupiditate, consectetur quos fugiat tempore rerum soluta amet porro labore voluptatibus iste accusantium corrupti. Molestiae vitae saepe fuga, delectus eius eos quam esse exercitationem nobis nulla? Vel officiis magnam perferendis eos tempore excepturi ratione magni ducimus omnis, fugit ipsam voluptatem rerum cupiditate distinctio quaerat doloribus ullam quae explicabo dolore? Ipsum inventore corrupti similique rerum maiores iusto illum autem voluptatibus, consequuntur impedit alias, quo at eaque fuga dicta explicabo unde, incidunt ullam neque quibusdam.</p> -->
+  </div>
+
 
 	<!-- Bootstrap Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- wowjs for animate -->
+  <script src="assets/bundle/wowjs/wow.js"></script>
+  <script> new WOW().init();</script>
+
+  <!-- main js -->
   <script src="assets/js/app.js"></script>
+
+
+
 </body>
 
 </html>

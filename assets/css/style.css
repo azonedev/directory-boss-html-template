@@ -37,10 +37,19 @@
 
 
 /*--common colors---*/
+a{
+	text-decoration: none;
+	color:currentcolor;
+}
 .main-color{
 	color:var(--main-color);
 }
-
+.deep-blue{
+	color: var(--deep-blue);
+}
+.light-black{
+	color: var(--light-black);
+}
 /*--common backgrounds---*/
 .main-bg{
 	background: var(--main-color);
@@ -109,7 +118,9 @@
 /*-----
 	Header menu styles 
 ----*/
-
+.header-clear{
+	height: 74px;
+}
 
 /*--- full screen search option on header ---*/
 
@@ -180,10 +191,31 @@
 }
 
 
+/*------
+	welcome section
+----*/
+.welcome-wrap{
+	height: 100vh;
+	z-index: 9;
+}
+.welcome-image img{
+	width: auto;
+	max-width: 100%;
+	max-height: 450px;
+	z-index: 8;
+}
 
-
-
-
+/*--- cateogry ---*/
+.category{
+	margin-top: -80px;
+	z-index: 10px;
+}
+.cat-item{
+	border-right: 1px solid var(--light-black);
+}
+.cat-item:last-child{
+	border-right: none;
+}
 /*-----
 	responsive-code
 ----*/

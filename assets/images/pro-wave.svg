@@ -1,0 +1,27 @@
+<svg width="1440" height="320" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="null" id="svg_1" d="m0,132l120,-12.75c330,-38.75 377,-101.95109 610,-111.29405c233,-9.34297 442,2.18978 602,23.63802l109,10.83384l-1,-44.42781l-120,0c-120,0 -360,0 -600,0c-240,0 -480,0 -600,0l-120,0l0,134z" fill="#1DC68C"/>
+  <path id="svg_3" d="m1284,38.45313c-361.72432,-32.41727 251,23 124,10" opacity="0.5" stroke-opacity="null" stroke-width="null" stroke="null" fill="#1DC68C"/>
+  <path id="svg_4" d="m1357,40.45313l-118,-27.45313" opacity="0.5" stroke-opacity="null" stroke-width="null" stroke="null" fill="#1DC68C"/>
+  <path id="svg_5" d="m757,42.45313l91,-95.45313" opacity="0.5" stroke-opacity="null" stroke-width="null" stroke="null" fill="#1DC68C"/>
+  <g id="svg_21">
+   <g transform="matrix(0.0013717421329234036,0,0,0.0013717421329234036,0,0) " id="svg_19">
+    <title transform="translate(524159.96875,0) translate(0,116366) ">background</title>
+    <rect x="524158.96875" y="116365" width="802" height="602" id="svg_17" fill="none"/>
+   </g>
+   <g transform="matrix(0.0013717421329234036,0,0,0.0013717421329234036,0,0) " id="svg_20">
+    <title transform="translate(524159.96875,0) translate(0,116366) ">Layer 1</title>
+    <path fill="#1DC68C" d="m524159.96875,116553l120,-23.375c120,-23.375 367,-80.46169 600,-93.5c233,-13.03832 460,24.54962 604,-7.40013l117,-15.97487l-1,-46.75l-120,0c-120,0 -360,0 -600,0c-240,0 -480,0 -600,0l-120,0l0,187z" id="svg_16" stroke="null"/>
+    <path fill="#1DC68C" stroke="null" stroke-width="null" stroke-opacity="null" opacity="0.5" d="m525443.96875,116404.45313c-361.72432,-32.41727 251,23 124,10" id="svg_15"/>
+    <path fill="#1DC68C" stroke="null" stroke-width="null" stroke-opacity="null" opacity="0.5" d="m525516.96875,116406.45313l-118,-27.45313" id="svg_14"/>
+    <path fill="#1DC68C" stroke="null" stroke-width="null" stroke-opacity="null" opacity="0.5" d="m524916.96875,116408.45313l91,-95.45313" id="svg_13"/>
+   </g>
+  </g>
+ </g>
+</svg>
