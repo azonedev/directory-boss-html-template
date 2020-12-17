@@ -41,6 +41,9 @@ a{
 	text-decoration: none;
 	color:currentcolor;
 }
+a:hover{
+	color: currentColor;
+}
 .main-color{
 	color:var(--main-color);
 }
@@ -80,6 +83,11 @@ a{
 	margin: 0 auto;
 	width: 20%;
 	border-bottom: 2px solid var(--main-color);
+}
+.title-left{
+	font-weight: 700;
+	padding-left:10px;
+	border-left: 8px solid var(--main-color);
 }
 .underline:hover{
 	border-bottom: none;
@@ -262,6 +270,26 @@ a{
 	background-color: var(--main-color);
 	border: 1px solid var(--white);
 }
+
+
+/*----
+	Single business by category
+-----*/
+
+.single-cat-business-img{
+	max-width: 100px;
+	max-height: 100px;
+}
+.single-cat-business-img-col{
+	max-width: 115px;
+}
+.single-cat-business-text-col p{
+	font-weight: bold;
+}
+.single-cat-business-text-col .bi-star-fill,.bi-star-half,.bi-star{
+	color:orange;
+}
+
 
 /*-----
 	responsive-code
