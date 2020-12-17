@@ -70,6 +70,17 @@ a{
 	text-decoration: none;
 	border-bottom: 2px solid var(--main-color);
 }
+.title{
+	font-weight: 700;
+	text-align: center;
+}
+.title div{
+
+	padding-top: 15px;
+	margin: 0 auto;
+	width: 20%;
+	border-bottom: 2px solid var(--main-color);
+}
 .underline:hover{
 	border-bottom: none;
 }
@@ -195,7 +206,7 @@ a{
 	welcome section
 ----*/
 .welcome-wrap{
-	height: 100vh;
+	/*height: 100vh;*/
 	z-index: 9;
 }
 .welcome-image img{
@@ -211,11 +222,47 @@ a{
 	z-index: 10px;
 }
 .cat-item{
-	border-right: 1px solid var(--light-black);
+	border-right: 1px dashed var(--light-black);
 }
 .cat-item:last-child{
 	border-right: none;
 }
+
+
+/*----
+	featured buiness
+----*/
+
+.business-item{
+	border:1px solid #ddd;
+}
+.business-item img{
+	height: 100px;
+}
+
+/*---
+	all-category
+---*/
+.accordion-body .sub-cat{
+	text-align: left;
+}
+.accordion-button:not(.collapsed) {
+	color: var(--main-color);
+	background-color: #e7f1ff;
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: #fff;
+	outline: 0;
+	 box-shadow: none; 
+}
+.accordion-button {
+	color: white;
+	font-weight: bold;
+	background-color: var(--main-color);
+	border: 1px solid var(--white);
+}
+
 /*-----
 	responsive-code
 ----*/
