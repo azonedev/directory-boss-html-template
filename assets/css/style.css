@@ -248,6 +248,20 @@ a:hover{
 	height: 100px;
 }
 
+/*------
+	RECENT REVIEW
+-----*/
+.review-area .img-col{
+	max-width: 90px;
+}
+.review-area img{
+	width:70px;
+	height: 70px;
+	border:2px solid var(--main-color);
+	padding: 5px;
+	border-radius: 50%;
+}
+
 /*---
 	all-category
 ---*/
@@ -286,7 +300,7 @@ a:hover{
 .single-cat-business-text-col p{
 	font-weight: bold;
 }
-.single-cat-business-text-col .bi-star-fill,.bi-star-half,.bi-star{
+.bi-star-fill,.bi-star-half,.bi-star{
 	color:orange;
 }
 
