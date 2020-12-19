@@ -291,6 +291,27 @@ a:hover{
 }
 
 
+
+/*-----
+	FOOTER
+----*/
+
+footer{
+	background: #222222;
+	color:var(--white);
+}
+footer .footer-top{
+
+}
+footer h4{
+	font-weight: bold;
+}
+footer .footer-bottom{
+	padding: 20px;
+	width: 100%;
+	background: #000;
+}
+
 /*-----
 	responsive-code
 ----*/
