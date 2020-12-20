@@ -113,6 +113,9 @@
                 </div>
               </form>
             </div>
+            <div class="animation-text py-3 deep-blue">
+              <h3>Total : <span class="typed" ></span></h3>
+            </div>
   				</div>
   				<!-- welcome-left -->
   				<!-- welcome right -->
@@ -1344,7 +1347,18 @@
   <!-- wowjs for animate -->
   <script src="assets/bundle/wowjs/wow.js"></script>
   <script> new WOW().init();</script>
-
+  <script src="assets/bundle/jquery.min.js"></script>
+  <!-- typed js for text-animate -->
+  <script src="assets/bundle/typed/typed.min.js"></script>
+  <script>
+    var typed = new Typed('.typed', {
+      strings: ["500 clients.", "1000 business.", "18500 reviews"],
+      typeSpeed: 60,
+      startDelay: 35,
+      smartBackspace: true,
+      loop:true,
+    });
+  </script>
   <!-- main js -->
   <script src="assets/js/app.js"></script>
 
