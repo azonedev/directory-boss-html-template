@@ -72,6 +72,13 @@ a:hover{
 .underline{
 	text-decoration: none;
 	border-bottom: 2px solid var(--main-color);
+}.u-black{
+	text-decoration: none;
+	border-bottom: 2px solid var(--light-black);
+	margin-right: 10px
+}
+.u-black:hover{
+	border-bottom: none;
 }
 .title{
 	font-weight: 700;
