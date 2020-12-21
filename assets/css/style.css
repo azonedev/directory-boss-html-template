@@ -230,7 +230,23 @@ a:hover{
 	max-height: 450px;
 	z-index: 8;
 }
-
+.bi.bi-search.searchInput {
+	padding: 10px;
+	/* margin-top: 5px; */
+	font-size: 20px;
+	color: var(--light-black);
+	background: var(--white);
+	border: transparent;
+	margin-right: -1px;
+	border-radius: 2px 0px 0px 2px;
+}
+#searchInput {
+	border: transparent !important;
+}
+#searchInput:focus {
+	border: transparent !important;
+	box-shadow: none;
+}
 /*--- cateogry ---*/
 .category{
 	margin-top: -80px;

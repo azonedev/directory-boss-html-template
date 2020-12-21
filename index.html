@@ -106,7 +106,7 @@
             <div class="big-search">
               <form action="">
                 <div class="input-group">
-                 <input type="text" class="form-control py-3 left-search" id="searchInput" placeholder="" onclick="document.getElementById('searchInput').value = ''">
+                 <i class="bi bi-search searchInput"></i><input type="text" class="form-control py-3 left-search" id="searchInput" placeholder="" onclick="document.getElementById('searchInput').value = ''">
                  <!-- Search for a business or category ... -->
                   <span class="input-group-text" id="basic-addon2">
                     <button type="submit" class="btn py-2 px-3">Search</button>
@@ -1887,16 +1887,17 @@
   <script>
     var typed = new Typed('.typed', {
       strings: ["500 clients.", "1000 business.", "18500 reviews"],
-      typeSpeed: 60,
+      typeSpeed: 70,
       startDelay: 35,
       smartBackspace: true,
       loop:true,
     });
-    var searchTyped = new SearchTyped('.left-search', {
-      strings: ["500 clients.", "1000 business.", "18500 reviews"],
-      typeSpeed: 60,
-      startDelay: 35,
-      smartBackspace: true,
+    var typed = new Typed('.left-search', {
+      strings: ["Search for a business, category, product, website, https:// ..."],
+      typeSpeed: 35,
+      // startDelay: 35,
+      smartBackspace: false,
+      loop:false,
 
     });
     // onTypingPaused(arrayPos: number, self: searchTyped);
