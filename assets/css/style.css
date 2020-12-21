@@ -284,7 +284,9 @@ a:hover{
 	padding: 5px;
 	border-radius: 50%;
 }
-
+.rounded-3 {
+	border-radius: 1.3rem !important;
+}
 /*---
 	all-category
 ---*/
@@ -422,8 +424,13 @@ footer{
 	background: #222222;
 	color:var(--white);
 }
-footer .footer-top{
-
+footer .footer-top .feature-buiness .img{
+	min-width: 80px;
+	padding: 20px 0px;
+}
+footer .footer-top .feature-buiness .img img{
+	height: 50px;
+	max-width: 75px;
 }
 footer h4{
 	font-weight: bold;
