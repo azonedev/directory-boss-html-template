@@ -329,6 +329,50 @@ a:hover{
 	border: 1px solid var(--main-color) !important;
 	margin-top:-7px;
 }
+
+
+
+/*----
+	CATEGORY-BUSINESS SECTION
+-----*/
+
+
+.col-md-4.col-sm-6.cat-business {
+	/* background: #F3F7FD; */
+	padding: 15px;
+}
+
+.cat-business .label {
+	background: #E1E8F2;
+	border-radius: 5px 5px 0px 0px;
+	padding:15px;
+	transition: 0.4s;
+}
+.cat-business .label:hover{
+	background: #B6BECA;
+}
+.cat-business .label .row .img-col{
+	max-width: 60px;
+}
+.cat-business .item {
+	background: #F3F7FD;
+	padding: 10px;
+	border-bottom: 2px solid var(--white);
+	transition: 0.4s;
+}
+.cat-business .item:hover{
+	background: #ddd;
+}
+.col.cat-business-img-col {
+	max-width: 110px;
+}
+.cat-business-img {
+	max-width: 100px;
+	height: 55px;
+}
+
+
+
 /*----
 	Single business by category
 -----*/
