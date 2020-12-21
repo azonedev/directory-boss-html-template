@@ -326,7 +326,12 @@ a:hover{
 	background-color: none;
 	border: 1px solid var(--white);
 }
-
+.accordion-item .accordion-button{
+	font-weight: 600 !important;
+}
+.accordion-button:not(.collapsed)::after {
+	filter: brightness(100);
+}
 .accordion-flush .accordion-item .accordion-button {
 	 border-top-width: 5; 
 	/* border-top-left-radius: 0; */
