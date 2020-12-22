@@ -271,6 +271,32 @@ a:hover{
 	height: 100px;
 }
 
+
+/*_______
+	
+	TAB MENU _ CONTENT
+________*/
+.nav-tabs{
+	margin:0 auto;
+}
+.nav-tabs .nav-item {
+	margin: 0 auto;
+	width: 50%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	background-color: var(--main-color);
+	border-color: var(--main-color);
+	color: var(--white);
+	border-radius: 0;
+}
+
+.nav-tabs, .nav-tabs .nav-link:hover {
+	border-color: var(--main-color);
+	background: #1DC68C1C;
+	border-radius: 0;
+	color:black;
+}
+
 /*------
 	RECENT REVIEW
 -----*/
@@ -440,6 +466,14 @@ footer .footer-bottom{
 	width: 100%;
 	background: #000;
 }
+
+
+
+
+
+
+
+
 
 /*-----
 	responsive-code
