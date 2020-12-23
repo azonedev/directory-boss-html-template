@@ -394,7 +394,10 @@ ________*/
 	margin-top:-7px;
 }
 
-
+.accordion-button:active .accordion-button::after {
+	transition: none;
+	filter: brightness(100);
+}
 
 /*----
 	CATEGORY-BUSINESS SECTION
@@ -507,13 +510,21 @@ footer .footer-bottom{
 /*-----
 	responsive-code
 ----*/
- /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { 
 
 }
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
 
+}
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+}
  /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (max-width: 991px) { 
 	.middle-menu{
 		width:120px;
 		padding:20px 0px;
@@ -530,18 +541,17 @@ footer .footer-bottom{
 	.right-menu .sign-up{
 		padding: 20px 0px !important;
 	}
-}
- /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-
-}
-
-/*X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-
+	.header-clear{
+		margin-top:-10px;
+	}
 }
 
-/*XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) { 
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
 
 }
+
+
+
+
+
