@@ -459,6 +459,16 @@ ________*/
 }
 
 
+/*-----
+	BLOG
+----*/
+
+.blog-item img{
+	/*border:3px solid black;*/
+	/*border-radius: 10px;*/
+	height: 229px;
+	max-height: 230px;
+}
 
 /*-----
 	FOOTER
