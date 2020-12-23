@@ -350,28 +350,27 @@ ________*/
 .sub-cat p :last-child{
 	border-bottom: none;
 }
-.accordion-button:not(.collapsed) {
-	color: var(--white);
-	background-color: var(--main-color);
+
+.accordion-button {
+	font-weight: 600 !important;
+	color: black;
+	font-size: 18px;
+	background-color: none;
+	border: 1px solid var(--white);
 }
 .accordion-button:focus {
 	z-index: 3;
 	border-color: #fff;
 	outline: 0;
 	box-shadow: none; 
-	background: var(--main-color);
+/*	background: var(--main-color);
+	color: var(--white);*/
+}
+.accordion-button:not(.collapsed) {
 	color: var(--white);
+	background-color: var(--main-color);
 }
-.accordion-button {
-	color: black;
-	/*font-weight: bold;*/
-	font-size: 18px;
-	background-color: none;
-	border: 1px solid var(--white);
-}
-.accordion-item .accordion-button{
-	font-weight: 600 !important;
-}
+
 .accordion-button:not(.collapsed)::after {
 	filter: brightness(100);
 }
