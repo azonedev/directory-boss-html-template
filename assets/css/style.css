@@ -44,6 +44,11 @@ a{
 a:hover{
 	color: currentColor;
 }
+
+img{
+	max-width: 100%;
+}
+
 .main-color{
 	color:var(--main-color);
 }
@@ -75,10 +80,12 @@ a:hover{
 }.u-black{
 	text-decoration: none;
 	border-bottom: 2px solid var(--light-black);
-	margin-right: 10px
+	margin-right: 10px;
+	font-weight: bold;
+	transition:0.2;
 }
 .u-black:hover{
-	border-bottom: none;
+	border-color: var(--main-color) ;
 }
 .title{
 	font-weight: 700;
@@ -238,6 +245,10 @@ a:hover{
 	max-height: 450px;
 	z-index: 8;
 	stroke: 2px;
+	transition: .21s;
+}
+.welcome-image img:hover{
+	width: 169px;
 }
 .bi.bi-search.searchInput {
 	padding: 10px;
@@ -407,6 +418,7 @@ ________*/
 .col-md-4.col-sm-6.cat-business {
 	/* background: #F3F7FD; */
 	padding: 15px;
+
 }
 
 .cat-business .label {
@@ -427,8 +439,13 @@ ________*/
 .cat-business .item {
 	background: #F3F7FD;
 	padding: 10px;
-	border-bottom: 2px solid var(--white);
+	border-bottom: 1px solid #ddd;
 	transition: 0.4s;
+	border-left:1px solid var(--main-color);
+	border-right:1px solid var(--main-color);
+}
+.cat-business .item:last-child{
+	border-bottom:1px solid var(--main-color);
 }
 .cat-business .item:hover{
 	background: #ddd;
