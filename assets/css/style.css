@@ -48,7 +48,9 @@ a:hover{
 img{
 	max-width: 100%;
 }
-
+li{
+	list-style-type: none;
+}
 .main-color{
 	color:var(--main-color);
 }
@@ -514,6 +516,9 @@ footer .footer-bottom{
 	padding: 20px;
 	width: 100%;
 	background: #000;
+}
+footer li{
+	padding:7px 0px;
 }
 
 
