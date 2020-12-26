@@ -13,6 +13,9 @@
   <!-- wow js for animate -->
   <link rel="stylesheet" href="assets/bundle/wowjs/animate.css"> <!-- only for home page -->
 
+  <!-- lity for popup player -->
+  <link rel="stylesheet" href="assets/bundle/lity/lity.min.css">
+
 	<!-- main css -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Directory Boss</title>
@@ -47,7 +50,7 @@
 
 							<!-- middle menu -->
 							<li class="nav-item u-black"><a href="#" class="nav-link active">Write a Review</a></li>
-							<li class="nav-item u-black"><a href="#" class="nav-link active">For Buiness</a></li>
+							<li class="nav-item u-black"><a href="#" class="nav-link active">Add Buiness</a></li>
 							<li class="nav-item u-black"><a href="#" class="nav-link active">Categories</a></li>
               <!-- search -->
 							<li class="nav-item">
@@ -115,13 +118,20 @@
               </form>
             </div>
             <div class="animation-text py-3 deep-blue">
-              <h3>Total : <span class="typed" ></span></h3>
+              <h3><span class="text-white">Total : </span> <span class="typed" ></span></h3>
             </div>
   				</div>
   				<!-- welcome-left -->
   				<!-- welcome right -->
-  				<div class="col-md-5 welcome-image wow slideInRight">
-            <img src="assets/images/search-bg.svg" alt="">
+  				<div class="col-md-5 welcome-image wow slideInRight text-center">
+            <div class="p-5"></div>
+            <a href="https://www.youtube.com/watch?v=q-g7BPdSmP4&t" data-lity>
+              <img src="assets/images/play.svg" width="150px" height="" alt="">
+              <br>
+              <br>
+              <P class="h4">Watch on video</P>
+            </a>
+
   				</div>
   				<!-- /welcome right -->
   			</div>
@@ -1942,6 +1952,9 @@
     });
     // onTypingPaused(arrayPos: number, self: searchTyped);
   </script>
+
+  <!-- lity.js is for popup player -->
+  <script src="assets/bundle/lity/lity.min.js"></script>
 
   <!-- main js -->
   <script src="assets/js/app.js"></script>
