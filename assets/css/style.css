@@ -556,8 +556,32 @@ footer li{
 
 
 
+/*___________
+	SINGLE-CATEGORY
+	BUSINESS-CATEGORY
+___________*/
+
+.business-item .col.logo {
+    max-width: 150px;
+}
 
 
+/*verified*/
+.verified{
+	font-style: italic;
+	padding-left: 10px;
+}
+.verified .bi{
+	font-size: 22px;
+	color: var(--main-color);
+	/*font-weight: bold;*/
+}
+.sponser .bi{
+	padding-left: 15px;
+	font-size: 18px;
+	color: orange;
+	/*font-weight: bold;*/
+}
 
 
 /*-----
