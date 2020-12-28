@@ -1,0 +1,2165 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap fonts -->
+	<link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+
+  <!-- wow js for animate -->
+  <link rel="stylesheet" href="assets/bundle/wowjs/animate.css"> <!-- only for home page -->
+
+  <!-- lity for popup player -->
+  <link rel="stylesheet" href="assets/bundle/lity/lity.min.css">
+
+	<!-- main css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Directory Boss</title>
+</head>
+<body>
+
+	<header>
+		<div class="fluid shadow fixed-top bg-white py-1 fadeInDown" data-wow-delay="0.2s">
+			<nav class="navbar navbar-expand-lg navbar-light container">
+				<div class="container-fluid">
+					<!-- logo / brand-name -->
+					<a class="col-4 navbar-brand" href="#">
+						<span class="logo">
+							<div class="text">
+								<span class="h2 main-color">DirectoryBoss</span>
+							</div>
+							<!--  <div class="logo">
+								<img src="#" alt="">
+							</div> -->
+						</span>
+					</a>
+
+					<!-- collapse options -->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<!-- menu -->
+						<ul class="col-md-7 navbar-nav d-flex justify-content-center middle-menu">
+
+							<!-- middle menu -->
+							<li class="nav-item u-black"><a href="#" class="nav-link active">Write a Review</a></li>
+							<li class="nav-item u-black"><a href="#" class="nav-link active">Add Buiness</a></li>
+							<li class="nav-item u-black"><a href="#" class="nav-link active">Categories</a></li>
+              <!-- search -->
+							<li class="nav-item">
+                <a href="#" class="nav-link active fancy-link" onclick="openSearch()" id="search">
+                  <i class="bi bi-search"></i>
+                </a>
+              </li>
+              <!-- full-screen box-->
+                <div id="myOverlay" class="overlay">
+                  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
+                    <i class="bi bi-file-x"></i>
+                  </span>
+                  <div class="overlay-content">
+                    <form action="action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                  </div>
+                </div>
+              <!-- /full-scren box -->
+              <!--/ search -->
+							<!-- / middle menu -->
+
+						</ul>
+
+						<ul class="col-md-6 navbar-nav d-flex justify-content-end right-menu">
+
+							<!-- right menu -->
+							<li class="nav-item sign-in"><a href="#" class="nav-link active fancy-link underline">Sign In</a></li>
+							<li class="nav-item px-2 sign-up"><a href="#" class="nav-link active primary-btn outline">Sign Up</a></li>
+							<!-- /right menu -->
+
+						</ul>
+						<!-- /menu -->
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+  <div class="header-clear"></div>
+
+  <!-- section - hero section -->
+  <div class="welcome-wrap">
+  	<section class="fluid welcome main-bg text-white">
+  		<div class="container">
+  			<div class="row row-cols-md-2 pt-5">
+  				<!-- welcome-left -->
+  				<div class="col-md-7 welcome-search py-5 wow slideInLeft">
+  					<div class="display-6 top-content fw-normal">
+  						Lorem ipsum, dolor sit amet, conse ctetur adipisicing elit. Reprehe nderit, sapiente.
+  					</div>
+  					<div class="small-content py-3 deep-blue">
+  						<h5>Read reviews, Write reviews, Find companies.</h5>
+  					</div>
+            <div class="big-search">
+              <form action="">
+                <div class="input-group">
+                 <i class="bi bi-search searchInput"></i><input type="text" class="form-control py-3 left-search" id="searchInput" placeholder="" onclick="document.getElementById('searchInput').value = ''">
+                 <!-- Search for a business or category ... -->
+                  <span class="input-group-text" id="basic-addon2">
+                    <button type="submit" class="btn py-2 px-3">Search</button>
+                  </span>
+                </div>
+              </form>
+            </div>
+            <div class="animation-text py-3">
+              <h3 class="text-white">Total : <span class="typed"> </span></h3>
+            </div>
+  				</div>
+  				<!-- welcome-left -->
+  				<!-- welcome right -->
+  				<div class="col-md-5 welcome-image wow slideInRight text-center">
+            <div class="p-5"></div>
+            <a href="https://www.youtube.com/watch?v=q-g7BPdSmP4&t" data-lity>
+              <img src="assets/images/play.svg" width="150px" height="" alt="">
+              <br>
+              <br>
+              <P class="h4">Watch on video</P>
+            </a>
+
+  				</div>
+  				<!-- /welcome right -->
+  			</div>
+  		</div>
+  	</section>
+    <div class="carve">
+      <img src="assets/images/pro-wave.svg" width="100%" alt="">
+    </div>
+  </div>
+  <!-- /hero section -wrap -->
+
+  <!-- MAIN CATEGORY -->
+  <section class="category fluid bg-white">
+    <div class="container shadow">
+      <div class="category-area text-center p-3 row row-cols-lg-10 row-cols-md-8">
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/cloud.png"/>
+            <br>
+            <p class="pt-1">Cloud</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/amazon.png"/>
+            <br>
+            <p class="pt-1">amazon</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/google.png"/>
+            <br>
+            <p class="pt-1">google</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/microsoft.png"/>
+            <br>
+            <p class="pt-1">microsoft</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/apple.png"/>
+            <br>
+            <p class="pt-1">apple</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/tencent.png"/>
+            <br>
+            <p class="pt-1">tencent</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/share-tune.png"/>
+            <br>
+            <p class="pt-1">Share Tune</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#">
+            <img src="assets/images/icon/puzzle.png"/>
+            <br>
+            <p class="pt-1">puzzle</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/idea.png"/>
+            <br>
+            <p class="pt-1">idea leader</p>
+          </a>
+        </div>
+        <div class="cat-item col">
+          <a href="#" class="fency-link">
+            <img src="assets/images/icon/more.png"/>
+            <br>
+            <p class="pt-1">more</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /MAIN CATEGORY -->
+
+  <section class="black-left-right-shape my-5">
+    <div class="container bg-white">
+      <div class="p-1"></div>
+    </div>
+  </section>
+
+  <!-- FEATURE BUSINESS -->
+  <section class="feature-business my-6">
+      <h2 class="title p-2">Featured Business
+        <div></div>
+      </h2>
+      <div class="container py-4">
+        <div class="business row">
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/tesla.png" class="py-2" alt="">
+                </img>
+                <p>Tesla</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/toyota.png" class="py-2" alt="">
+                </img>
+                <p>Toyota</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/nasa.png" class="py-2" alt="">
+                </img>
+                <p>NASA</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/coca.png" class="py-2" alt="">
+                </img>
+                <p>Coca Cola</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/coca.png" class="py-2" alt="">
+                </img>
+                <p>Coca Cola</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/nasa.png" class="py-2" alt="">
+                </img>
+                <p>NASA</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/tesla.png" class="py-2" alt="">
+                </img>
+                <p>Tesla</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/toyota.png" class="py-2" alt="">
+                </img>
+                <p>Toyota</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/toyota.png" class="py-2" alt="">
+                </img>
+                <p>Toyota</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/google.png" class="py-2" alt="">
+                </img>
+                <p>Google</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/coca.png" class="py-2" alt="">
+                </img>
+                <p>Coca Cola</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/nasa.png" class="py-2" alt="">
+                </img>
+                <p>NASA</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/tesla.png" class="py-2" alt="">
+                </img>
+                <p>Tesla</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/toyota.png" class="py-2" alt="">
+                </img>
+                <p>Toyota</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/nasa.png" class="py-2" alt="">
+                </img>
+                <p>NASA</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="business-item my-3 shadow text-center">
+              <a href="#" class="fency-link">
+                <img src="assets/images/google.png" class="py-2" alt="">
+                </img>
+                <p>Google</p>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- /FEATURE BUSINESS -->
+
+  <section class="tab-menu py-5 container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item nav-item-left" role="presentation">
+        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"> <h2 class="title">For Local Business</h2></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h2 class="title">For Business Owners</h2></a>
+      </li>
+      
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active py-4 text-center" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <h1 class="pt-4">Looking for a local business?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        <div class="p-5"></div>
+        <div class="items">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="assets/images/business-grow.png" width="120px" alt="">
+              <div class="p-3"></div>
+              <h5>For business fast</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium dolorem nostrum fugiat enim. Optio odio temporibus, amet at ea?</p>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/images/review.png" width="120px" alt="">
+              <div class="p-3"></div>
+              <h5>Got real reviews</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium dolorem nostrum fugiat enim. Optio odio temporibus, amet at ea?</p>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/images/business-grow.png" width="120px" alt="">
+              <div class="p-3"></div>
+              <h5>For business fast</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium dolorem nostrum fugiat enim. Optio odio temporibus, amet at ea?</p>
+            </div>
+          </div>
+          <div class="pt-4"></div>
+          <button class="primary-btn outline">Get It Now</button>
+
+        </div>
+      </div>
+      <div class="tab-pane fade py-4 text-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <h1 class="pt-4">Is your business a local favourite ?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        <div class="p-5"></div>
+        <div class="items">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="assets/images/search.png" width="120px" alt="">
+              <div class="p-3"></div>
+              <h5>Explore business</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium dolorem nostrum fugiat enim. Optio odio temporibus, amet at ea?</p>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/images/support.png" width="120px" alt="">
+              <div class="p-3"></div>
+              <h5>Community support </h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium dolorem nostrum fugiat enim. Optio odio temporibus, amet at ea?</p>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/images/business-grow.png" width="120px" alt="">
+              <div class="p-3"></div>
+              <h5>For business fast</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laudantium dolorem nostrum fugiat enim. Optio odio temporibus, amet at ea?</p>
+            </div>
+          </div>
+          
+          <div class="pt-4"></div>
+          <button class="primary-btn pt-4 outline">Get It Now</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recent-review">
+    <h2 class="title p-4">Recent Reviews
+        <div></div>
+    </h2>
+    <div class="container-fluid">
+      <div class="row m-2">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+          <div class="review-area shadow rounded-3">
+            <div class="row p-3">
+              <div class="col img-col"><img src="assets/images/av-1.png" alt=""></div>
+              <div class="col">
+                <h6>Asif <small>reviewd</small> NASA</h6>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="review-text p-3">
+              <div class="h4">Lorem ipsum, dolor.</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga rerum praesentium ab hic iure sunt iste, vero temporibus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+          <div class="review-area shadow rounded-3">
+            <div class="row p-3">
+              <div class="col img-col"><img src="assets/images/av-2.png" alt=""></div>
+              <div class="col">
+                <h6>Asif <small>reviewd</small> NASA</h6>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="review-text p-3">
+              <div class="h4">Lorem ipsum, dolor.</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga rerum praesentium ab hic iure sunt iste, vero temporibus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+          <div class="review-area shadow rounded-3">
+            <div class="row p-3">
+              <div class="col img-col"><img src="assets/images/av-1.png" alt=""></div>
+              <div class="col">
+                <h6>Asif <small>reviewd</small> NASA</h6>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="review-text p-3">
+              <div class="h4">Lorem ipsum, dolor.</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga rerum praesentium ab hic iure sunt iste, vero temporibus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+          <div class="review-area shadow rounded-3">
+            <div class="row p-3">
+              <div class="col img-col"><img src="assets/images/av-2.png" alt=""></div>
+              <div class="col">
+                <h6>Asif <small>reviewd</small> NASA</h6>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="review-text p-3">
+              <div class="h4">Lorem ipsum, dolor.</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga rerum praesentium ab hic iure sunt iste, vero temporibus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+          <div class="review-area shadow rounded-3">
+            <div class="row p-3">
+              <div class="col img-col"><img src="assets/images/av-1.png" alt=""></div>
+              <div class="col">
+                <h6>Asif <small>reviewd</small> NASA</h6>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="review-text p-3">
+              <div class="h4">Lorem ipsum, dolor.</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga rerum praesentium ab hic iure sunt iste, vero temporibus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-2">
+          <div class="review-area shadow rounded-3">
+            <div class="row p-3">
+              <div class="col img-col"><img src="assets/images/av-2.png" alt=""></div>
+              <div class="col">
+                <h6>Asif <small>reviewd</small> NASA</h6>
+                <p>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-fill"></i></span>
+                  <span><i class="bi bi-star-half"></i></span>
+                </p>
+              </div>
+            </div>
+            <div class="review-text p-3">
+              <div class="h4">Lorem ipsum, dolor.</div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga rerum praesentium ab hic iure sunt iste, vero temporibus!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- category &  business-->
+  <section class="category-business py-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- SINGLE CAT-BUSINESS -->
+        <div class="col-md-4 col-sm-6 cat-business pt-4">
+          <div class="label">
+            <!-- category-link -->
+            <a href="#">
+              <div class="row">
+              <div class="col img-col">
+                <img width="40px" src="https://img.icons8.com/wired/64/ffffff/phone.png"/>
+              </div>
+              <div class="col">
+                <h5>Lorem, ipsum.</h5>
+                <small>520 companies</small>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <!-- /SINGLE CAT-BUSINESS -->
+
+        <!-- SINGLE CAT-BUSINESS -->
+        <div class="col-md-4 col-sm-6 cat-business pt-4">
+          <div class="label">
+            <!-- category-link -->
+            <a href="#">
+              <div class="row">
+              <div class="col img-col">
+                <img width="40px" src="https://img.icons8.com/wired/64/ffffff/phone.png"/>
+              </div>
+              <div class="col">
+                <h5>Lorem, ipsum.</h5>
+                <small>520 companies</small>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <!-- /SINGLE CAT-BUSINESS -->
+
+        <!-- SINGLE CAT-BUSINESS -->
+        <div class="col-md-4 col-sm-6 cat-business pt-4">
+          <div class="label">
+            <!-- category-link -->
+            <a href="#">
+              <div class="row">
+              <div class="col img-col"><img width="40px" src="https://img.icons8.com/wired/64/ffffff/phone.png"/></div>
+              <div class="col">
+                <h5>Lorem, ipsum.</h5>
+                <small>520 companies</small>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <!-- /SINGLE CAT-BUSINESS -->
+
+        <!-- SINGLE CAT-BUSINESS -->
+        <div class="col-md-4 col-sm-6 cat-business pt-4">
+          <div class="label">
+            <!-- category-link -->
+            <a href="#">
+              <div class="row">
+              <div class="col img-col"><img width="40px" src="https://img.icons8.com/wired/64/ffffff/phone.png"/></div>
+              <div class="col">
+                <h5>Lorem, ipsum.</h5>
+                <small>520 companies</small>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <!-- /SINGLE CAT-BUSINESS -->
+
+        <!-- SINGLE CAT-BUSINESS -->
+        <div class="col-md-4 col-sm-6 cat-business pt-4">
+          <div class="label">
+            <!-- category-link -->
+            <a href="#">
+              <div class="row">
+              <div class="col img-col"><img width="40px" src="https://img.icons8.com/wired/64/ffffff/phone.png"/></div>
+              <div class="col">
+                <h5>Lorem, ipsum.</h5>
+                <small>520 companies</small>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <!-- /SINGLE CAT-BUSINESS -->
+
+        <!-- SINGLE CAT-BUSINESS -->
+        <div class="col-md-4 col-sm-6 cat-business pt-4">
+          <div class="label">
+            <!-- category-link -->
+            <a href="#">
+              <div class="row">
+              <div class="col img-col"><img width="40px" src="https://img.icons8.com/wired/64/ffffff/phone.png"/></div>
+              <div class="col">
+                <h5>Lorem, ipsum.</h5>
+                <small>520 companies</small>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="item">
+              <a href="#">
+                <div class="row">
+                  <div class="col cat-business-img-col">
+                    <img src="assets/images/nasa.png" class="cat-business-img" alt="">
+                  </div>
+                  <div class="col cat-business-text-col">
+                    <h6>NASA</h6>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <small>500+ reviews </small>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <!-- /SINGLE CAT-BUSINESS -->
+
+      </div>
+    </div>
+  </section>
+  <!-- /category &  business-->
+
+    <!-- all category -->
+  <section class="all-category">
+    <h2 class="title p-4">All Category
+        <div></div>
+    </h2>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 col-sm-6">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #1 
+                </button>
+              </h2>
+              <div id="flush-collapse-1" class="accordion-collapse collapse" aria-labelledby="flush-heading-1" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <a href="#">
+                      <p><i class="bi bi-box-arrow-in-right"></i> Sub-category [15]</p>
+                    </a>
+                    <a href="#">
+                      <p><i class="bi bi-box-arrow-in-right"></i> Sub-category [15]</p>
+                    </a>
+                    <a href="#">
+                      <p><i class="bi bi-box-arrow-in-right"></i> Sub-category [15]</p>
+                    </a>
+                    <a href="#">
+                      <p><i class="bi bi-box-arrow-in-right"></i> Sub-category [15]</p>
+                    </a>
+                    <a href="#">
+                      <p><i class="bi bi-box-arrow-in-right"></i> Sub-category [15]</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #2 
+                </button>
+              </h2>
+              <div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #3 
+                </button>
+              </h2>
+              <div id="flush-collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-heading-3" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-4" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #4 
+                </button>
+              </h2>
+              <div id="flush-collapse-4" class="accordion-collapse collapse" aria-labelledby="flush-heading-4" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-5" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #5 
+                </button>
+              </h2>
+              <div id="flush-collapse-5" class="accordion-collapse collapse" aria-labelledby="flush-heading-5" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-6" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #6 
+                </button>
+              </h2>
+              <div id="flush-collapse-6" class="accordion-collapse collapse" aria-labelledby="flush-heading-6" data-s-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-9" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #6
+                </button>
+              </h2>
+              <div id="flush-collapse-9" class="accordion-collapse collapse" aria-labelledby="flush-heading-9" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-7" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #7 
+                </button>
+              </h2>
+              <div id="flush-collapse-7" class="accordion-collapse collapse" aria-labelledby="flush-heading-7" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-8" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #8 
+                </button>
+              </h2>
+              <div id="flush-collapse-8" class="accordion-collapse collapse" aria-labelledby="flush-heading-8" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-10" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #10 
+                </button>
+              </h2>
+              <div id="flush-collapse-10" class="accordion-collapse collapse" aria-labelledby="flush-heading-10" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-12" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #6 
+                </button>
+              </h2>
+              <div id="flush-collapse-12" class="accordion-collapse collapse" aria-labelledby="flush-heading-12" data-s-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-13">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-13" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #6
+                </button>
+              </h2>
+              <div id="flush-collapse-13" class="accordion-collapse collapse" aria-labelledby="flush-heading-9" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-14">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-14" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #7 
+                </button>
+              </h2>
+              <div id="flush-collapse-14" class="accordion-collapse collapse" aria-labelledby="flush-heading-7" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-15">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-15" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #8 
+                </button>
+              </h2>
+              <div id="flush-collapse-15" class="accordion-collapse collapse" aria-labelledby="flush-heading-8" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-heading-16">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-16" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Category Item #10 
+                </button>
+              </h2>
+              <div id="flush-collapse-16" class="accordion-collapse collapse" aria-labelledby="flush-heading-10" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-left">
+                  <div class="sub-cat">
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [15]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [16]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [78]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [19]</a>
+                    </p>
+                    <p><i class="bi bi-box-arrow-in-right"></i> 
+                      <a href="#" class="fency-link">Sub-category [17]</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /all category -->
+  <section class="padding">
+    <div class="p-4"></div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="container">
+      <h3 class="title-left"><a href="#" class="">Blog's form DirectoryBoss</a></h3>
+      <div class="p-3"></div>
+
+      <!-- BLOG STYLE ONE -->
+      <div class="row">
+        <div class="col-md-6 pt-4">
+          <a href="#">
+          <div class="blog-relative">
+            <img src="assets/images/blog.jpg" width="100%" height="320px" alt="">
+            <div class="blog-absolute p-3">
+              <p class="btn btn-cat px-3">Software engineering</p>
+              <h2 class="">Software engineering is the syste matic application of engineering approaches to ...</h2>
+              <div class="p-1"></div>
+              <p>by <span class="h5">Nakil Buks</span></p>
+              
+              <span><i class="bi bi-clock-history"></i> 12-Dec, 2021</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-6 pt-4">
+          <a href="#">
+          <div class="blog-relative">
+            <img src="assets/images/blog-3.webp" width="100%" height="320px" alt="">
+            <div class="blog-absolute p-3">
+              <p class="btn btn-cat px-3">Business & Growth</p>
+              <h2 class="">Business Growth is a stage where the business reaches the point for expansion and seek ...</h2>
+              <div class="p-1"></div>
+              <p>by <span class="h5">Nakil Buks</span></p>
+              
+              <span><i class="bi bi-clock-history"></i> 12-Dec, 2021</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-6 pt-4">
+          <a href="#">
+          <div class="blog-relative">
+            <img src="assets/images/blog-2.jpg" width="100%" height="320px" alt="">
+            <div class="blog-absolute p-3">
+              <p class="btn btn-cat px-3">Digital Marketing</p>
+              <h2 class="">Digital marketing is the component of marketing that utilizes internet ...</h2>
+              <div class="p-1"></div>
+              <p>by <span class="h5">Nakil Buks</span></p>
+              
+              <span><i class="bi bi-clock-history"></i> 12-Dec, 2021</span>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-6 pt-4">
+          <a href="#">
+          <div class="blog-relative">
+            <img src="assets/images/blog-1.jpg" width="100%" height="320px" alt="">
+            <div class="blog-absolute p-3">
+              <p class="btn btn-cat px-3">Real State</p>
+              <h2 class="">Lorem ipsum dolor sit amet conse ctetur adipi sicing, elit. Provi dent, nihil ...</h2>
+              <div class="p-1"></div>
+              <p>by <span class="h5">Nakil Buks</span></p>
+              
+              <span><i class="bi bi-clock-history"></i> 12-Dec, 2021</span>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+      <!-- /BLOG STYLE ONE -->
+
+      <!-- BLOG STYLE TWO -->
+<!--       <div class="row">
+        <div class="col-md-4 col-sm-6 blog-item pl-4 pt-4">
+          <a href="#">
+            <img class="blog-img" src="assets/images/blog-1.webp" width="98%" alt="">
+          </a>
+          <div class="p-2"></div>
+          <a href="#" class="h3 fency-link">Lorem ipsum dolor sit dio s, amet. ipsum dolor sit, amet.</a>
+          <div class="p-2"></div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipi sic ing elit. A cumque voluptas veniam architecto rem debitis mollitia porro repellat consequatur quasi na tus recusandae ...</p>
+          <div class="p-2"></div>
+          <div class="blog-footer pl-3">
+            <span class="cat">Marketing</span>
+            <span class="p-3">/</span>
+            <span class="date">12-Dec,2020</span>
+            <span class="btn btn-dark float-end"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 blog-item pl-4 pt-4">
+          <a href="#">
+            <img class="blog-img" src="assets/images/blog-2.webp" width="98%" alt="">
+          </a>
+          <div class="p-2"></div>
+          <a href="#" class="h3 fency-link">Lorem ipsum dolor sit dio s, amet. ipsum dolor sit, amet.</a>
+          <div class="p-2"></div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipi sic ing elit. A cumque voluptas veniam architecto rem debitis mollitia porro repellat consequatur quasi na tus recusandae ...</p>
+          <div class="p-2"></div>
+          <div class="blog-footer">
+            <span class="cat">Marketing</span>
+            <span class="p-3">/</span>
+            <span class="date">12-Dec,2020</span>
+            <span class="btn btn-dark float-end"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 blog-item pt-4">
+          <a href="#">
+            <img class="blog-img" src="assets/images/blog-3.webp" width="98%" alt="">
+          </a>
+          <div class="p-2"></div>
+          <a href="#" class="h3 fency-link">Lorem ipsum dolor sit dio s, amet. ipsum dolor sit, amet.</a>
+          <div class="p-2"></div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipi sic ing elit. A cumque voluptas veniam architecto rem debitis mollitia porro repellat consequatur quasi na tus recusandae ...</p>
+          <div class="p-2"></div>
+        <div class="blog-footer">
+            <span class="cat">Marketing</span>
+            <span class="p-3">/</span>
+            <span class="date">12-Dec,2020</span>
+            <span class="btn btn-dark float-end"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </div>
+      </div> -->
+      <!-- /BLOG STYLE TWO -->
+    </div>
+  </section>
+  <!-- /BLOG-->
+
+  <!-- business by category section -->
+<!--   <div class="p-5"></div>
+  <section id="business-by-cat my-5">
+    <div class="container">
+      <h3 class="title-left"><a href="#" class="">Engineering</a></h3>
+      <div class="single-cat-business row">
+          <div class="col-md-4 col-sm-2 col-6">
+            <div class="business-item my-3 p-2 shadow">
+              <a href="#" class="fency-link">
+                <div class="row">
+                  <div class="col single-cat-business-img-col">
+                    <img src="assets/images/tesla.png" class="single-cat-business-img" alt="">
+                  </div>
+                  <div class="col single-cat-business-text-col">
+                    <h5>tesla</h5>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <br>
+                    <span>780+ reviews </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-2 col-6">
+            <div class="business-item my-3 p-2 shadow">
+              <a href="#" class="fency-link">
+                <div class="row">
+                  <div class="col single-cat-business-img-col">
+                    <img src="assets/images/coca.png" class="single-cat-business-img" alt="">
+                  </div>
+                  <div class="col single-cat-business-text-col">
+                    <h5>Coca Cola</h5>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <span><i class="bi bi-star"></i></span>
+                    <br>
+                    <span>650+ reviews </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-2 col-6">
+            <div class="business-item my-3 p-2 shadow">
+              <a href="#" class="fency-link">
+                <div class="row">
+                  <div class="col single-cat-business-img-col">
+                    <img src="assets/images/tesla.png" class="single-cat-business-img" alt="">
+                  </div>
+                  <div class="col single-cat-business-text-col">
+                    <h5>tesla</h5>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <br>
+                    <span>780+ reviews </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-2 col-6">
+            <div class="business-item my-3 p-2 shadow">
+              <a href="#" class="fency-link">
+                <div class="row">
+                  <div class="col single-cat-business-img-col">
+                    <img src="assets/images/coca.png" class="single-cat-business-img" alt="">
+                  </div>
+                  <div class="col single-cat-business-text-col">
+                    <h5>Coca Cola</h5>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-half"></i></span>
+                    <span><i class="bi bi-star"></i></span>
+                    <br>
+                    <span>650+ reviews </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-2 col-6">
+            <div class="business-item my-3 p-2 shadow">
+              <a href="#" class="fency-link">
+                <div class="row">
+                  <div class="col single-cat-business-img-col">
+                    <img src="assets/images/toyota.png" class="single-cat-business-img" alt="">
+                  </div>
+                  <div class="col single-cat-business-text-col">
+                    <h5>Toyota</h5>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star"></i></span>
+                    <br>
+                    <span>990+ reviews </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-2 col-6">
+            <div class="business-item my-3 p-2 shadow">
+              <a href="#" class="fency-link">
+                <div class="row">
+                  <div class="col single-cat-business-img-col">
+                    <img src="assets/images/icon/apple.png" class="single-cat-business-img" alt="">
+                  </div>
+                  <div class="col single-cat-business-text-col">
+                    <h5>Apple</h5>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <span><i class="bi bi-star-fill"></i></span>
+                    <br>
+                    <span>650+ reviews </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- /business by category section -->
+  <section class="padding">
+    <div class="p-4"></div>
+  </section>
+
+  <footer>
+    <div class="container footer-top">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 pt-5 footer-top-primary-col col-6">
+          <a href="#">
+            <div class="logo">
+              <div class="text">
+                <span class="h2 main-color">DirectoryBoss</span>
+              </div>
+              <!--  <div class="logo">
+                <img src="#" alt="">
+              </div> -->
+            </div>
+          </a>
+          <br>
+          <p><i class="bi bi-house"></i> St-luiesh, New-york - 3596</p>
+          <p><i class="bi bi-envelope"></i> <a href="mailto:mail@directoryboss.com" class="fency-link">Info@directoryboss.com</a></p>
+          <p><a href="#" class="fancy-link">Contact Us</a></p>
+          <p><a href="#" class="fancy-link">Tearms</a></p>
+          <p><a href="#" class="fancy-link">Privecy policy</a></p>
+
+          <br>
+
+          <div class="social-link">
+            <span>
+              <a href="#">
+                <img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                <img src="https://img.icons8.com/color/48/000000/facebook.png"/>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 pt-5 footer-top-about-col col-6">
+          <h4>About</h4>
+          <br>
+          <p>
+            <a href="#" class="fancy-link">Our Story</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Career</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">News  </a>
+          </p>
+          <a href="#">
+            <img src="assets/images/google-play.png" height="50px" width="165px" class="google-play" alt="">
+          </a>
+          <div class="p-2"></div>
+          <a href="">
+            <img src="assets/images/apple-store.png" height="50px" width="165px" class="apple-store" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 pt-5 footer-top-for-business-col col-6">
+          <h4>For Business</h4>
+          <br>
+          <p>
+            <a href="#" class="fancy-link">Why get listed?</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Sponsers</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Pricing</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Media kit</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Good boxes</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Partner</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Be DriectoryBoss</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-sm-6 pt-5 footer-top-services-col col-6">
+          <h4>Services</h4>
+          <br>
+          <li>
+            <a href="#" class=" fancy-link">Moblie app development</a>
+          </li>
+          <li>
+            <a href="#" class="fancy-link">Software development</a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">Web application development</a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">e-Commerce development</a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">Blockchain Technology </a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">SEO services</a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">Digital marketing</a>
+          </li>
+        </div>
+      </div>
+      <hr>
+      <div class="feature-buiness">
+        <h5 class="title-left">Featured Business in :</h5>
+        <div class="row">
+          <div class="col img">
+            <img src="assets/images/toyota.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/nasa.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/coca.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/tesla.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/toyota.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/coca.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/google.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/icon/idea.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-block">
+          <div class="row">
+            <div class="col footer-credit-left float-left text-start">
+              <p>All right reserved by <a href="#"class="fency-link">DirectoryBoss</a> &copy; 2020</p>
+            </div>
+            <div class="col footer-credit-right text-md-end">
+              <p>Development by <a href="#" class="fency-link">mamurjor</a></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- wowjs for animate -->
+  <script src="assets/bundle/wowjs/wow.js"></script>
+  <script> new WOW().init();</script>
+  <script src="assets/bundle/jquery.min.js"></script>
+  <!-- typed js for text-animate -->
+  <script src="assets/bundle/typed/typed.min.js"></script>
+  <script>
+    var typed = new Typed('.typed', {
+      strings: ["500 clients.", "1000 business.", "18500 reviews"],
+      typeSpeed: 70,
+      startDelay: 35,
+      smartBackspace: true,
+      loop:true,
+    });
+    var typed = new Typed('.left-search', {
+      strings: ["Search for a business, category, product, website, https:// ..."],
+      typeSpeed: 35,
+      // startDelay: 35,
+      smartBackspace: false,
+      loop:false,
+
+    });
+    // onTypingPaused(arrayPos: number, self: searchTyped);
+  </script>
+
+  <!-- lity.js is for popup player -->
+  <script src="assets/bundle/lity/lity.min.js"></script>
+
+  <!-- main js -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
