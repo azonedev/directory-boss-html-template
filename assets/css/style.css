@@ -562,14 +562,17 @@ footer li{
 ___________*/
 
 .business-item .col.logo {
-    max-width: 150px;
+    max-width: 200px;
 }
+.business-item .col.logo img{
+    max-height:100px;
 
+}
 
 /*verified*/
 .verified{
 	font-style: italic;
-	padding-left: 10px;
+	/*padding-left: 10px;*/
 }
 .verified .bi{
 	font-size: 22px;
@@ -581,6 +584,9 @@ ___________*/
 	font-size: 18px;
 	color: orange;
 	/*font-weight: bold;*/
+}
+.business-item .business-sponser{
+	max-width: 140px;
 }
 
 
