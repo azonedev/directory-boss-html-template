@@ -584,6 +584,18 @@ ___________*/
 }
 
 
+/*_____pagination______*/
+.page-link{
+	color:var(--black) !important;
+	font-weight: bold;
+}
+.page-item.active .page-link {
+    color: var(--white) !important;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
 /*-----
 	responsive-code
 ----*/
