@@ -572,7 +572,7 @@ ___________*/
 /*verified*/
 .verified{
 	font-style: italic;
-	/*padding-left: 10px;*/
+	padding-left: 15px;
 }
 .verified .bi{
 	font-size: 22px;
@@ -587,6 +587,9 @@ ___________*/
 }
 .business-item .business-sponser{
 	max-width: 140px;
+}
+.business-item .bi{
+	font-size: 22px;
 }
 
 
