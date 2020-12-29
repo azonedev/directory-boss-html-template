@@ -54,6 +54,9 @@ li{
 .main-color{
 	color:var(--main-color);
 }
+.main-bg{
+	background:var(--main-color);
+}
 .deep-blue{
 	color: var(--deep-blue);
 }
@@ -572,7 +575,7 @@ ___________*/
 /*verified*/
 .verified{
 	font-style: italic;
-	padding-left: 15px;
+	/*padding-left: 15px;*/
 }
 .verified .bi{
 	font-size: 22px;
@@ -580,7 +583,7 @@ ___________*/
 	/*font-weight: bold;*/
 }
 .sponser .bi{
-	padding-left: 15px;
+	/*padding-left: 15px;*/
 	font-size: 18px;
 	color: orange;
 	/*font-weight: bold;*/
@@ -589,7 +592,7 @@ ___________*/
 	max-width: 140px;
 }
 .business-item .bi{
-	font-size: 22px;
+	/*font-size: 22px;*/
 }
 
 
