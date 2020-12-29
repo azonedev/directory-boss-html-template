@@ -77,7 +77,9 @@ li{
 	border:transparent;
 	border-radius: 20px;
 }
-
+.btn:focus{
+	box-shadow: none;
+}
 /*--common underline styles---*/
 .underline{
 	text-decoration: none;
@@ -607,7 +609,19 @@ ___________*/
     border-color: var(--main-color);
 }
 
+/*___________
+	Listing-page
+___________*/
 
+.business-feature .logo{
+	max-width: 150px;
+}
+.business-feature .buttons{
+	max-width: 170px;
+}
+.business-feature .bi{
+	font-size: 15px;
+}
 /*-----
 	responsive-code
 ----*/
