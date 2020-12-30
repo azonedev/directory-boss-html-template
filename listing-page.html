@@ -95,8 +95,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9 col-sm-12">
+
           <!-- business-feature first section  -->
-          <div class="business-feature border p-3">
+          <div id="feature" class="business-feature border p-3">
             <div class="row">
               <div class="col logo">
                 <img src="assets/images/nasa.png" alt="">
@@ -144,7 +145,7 @@
           </div>
 
           <!-- review & business overview -->
-          <div class="business-overview border p-3 mt-3 bg-light">
+          <div id="review-overview" class="business-overview border p-3 mt-3 bg-light">
             <!-- review part -->
             <div class="review m-3 p-4 bg-white shadow-sm">
               <div class="row">
@@ -164,7 +165,7 @@
             <!-- <h3 class="p-3">LabSoft Technologies - reviews & details</h3> -->
 
             <!-- business-overview -->
-            <div class="overview m-3 border shadow-sm bg-white">
+            <div id="overview" class="overview m-3 border shadow-sm bg-white">
               <h3 class="p-4">Labsoft Technologies overview</h3>
               <hr class="mt-0">
               <div class="content p-4">
@@ -182,12 +183,11 @@
                   </p>
                 </span>
               </div>
-
             </div>
           </div>
 
           <!-- gallery -->
-          <div class="gallery border p-4 mt-3">
+          <div id="gallery" class="gallery border p-4 mt-3 shadow-sm">
             <div class="sort-desc">
               <div class="desc-title">
                 <h3>Portfolio / gallery</h3>
@@ -213,7 +213,7 @@
           </div>
 
           <!-- about-business -->
-          <div class="about-business border p-4 mt-3">
+          <div id="about" class="about-business border p-4 mt-3 shadow-sm">
             <div class="sort-desc">
               <div class="desc-title">
                 <h3>About the business of LabSoft</h3>
@@ -290,7 +290,7 @@
           </div>
 
           <!-- verified info -->
-          <div id="verified-info" class=" border p-4 mt-3">
+          <div id="verified-info" class=" border p-4 mt-3 shadow-sm">
             <!-- verified -icon -->
             <div class="verified h3">
               <i class="bi bi-shield-check" style="font-size: 29px"></i> Verified Info :
@@ -305,7 +305,7 @@
           </div>
 
           <!-- payment-info -->
-          <div id="payment-info" class="border p-4 mt-3">
+          <div id="payment-info" class="border p-4 mt-3 shadow-sm">
             <div class="verified h3">
               <i class="bi bi-credit-card-2-back-fill" style="font-size: 29px"></i> Payment accept :
             </div>
@@ -352,7 +352,7 @@
           </div>
 
           <!-- FAQ -->
-          <div id="faq" class="border p-4 mt-3">
+          <div id="faq" class="border p-4 mt-3 shadow-sm">
             <!-- Frequently Asked Questions -->
             <div class="verified h3">
               <i class="bi bi-question-octagon" style="font-size: 29px"></i> Frequently Asked Questions (FAQ) :
@@ -390,7 +390,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThreeq">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeq" aria-expanded="false" aria-controls="collapseThreeq">
-                    Lorem ipsum dolor sit amet consqectetur adipisicing, elit ?
+                   Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Tempora, alias?
                   </button>
                 </h2>
                 <div id="collapseThreeq" class="accordion-collapse collapse" aria-labelledby="headingThreeq" data-bs-parent="#accordionFAQ">
@@ -403,9 +403,22 @@
           </div>
 
         </div>
+        <!-- sidebar -->
         <div class="col-md-3 d-md-block d-none border p-3">
-          Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Aut repellendus culpa voluptate, quas inventore consequatur voluptatum assumenda doloremque ipsam quod ab omnis saepe consectetur adipisci rerum vel tempora nulla accusamus!
+          <!-- navigation link -->
+           <div class="title-left">Navigate this business page</div>
+           <br>
+           <ul>
+             <li class="py-2"><a href="#review-overview" class="fancy-link h6">Review & overview</a></li>
+             <li class="py-2"><a href="#gallery" class="fancy-link h6">Portfolio / Gallery</a></li>
+             <li class="py-2"><a href="#about" class="fancy-link h6">About Business</a></li>
+             <li class="py-2"><a href="#verified-info" class="fancy-link h6">Verified Info</a></li>
+             <li class="py-2"><a href="#payment-info" class="fancy-link h6">Payment Info</a></li>
+             <li class="py-2"><a href="#faq" class="fancy-link h6">FAQ</a></li>
+           </ul>
+           <hr>
         </div>
+        <!-- /sidebar -->
       </div>
     </div>
   </section>
