@@ -144,45 +144,65 @@
             </div>
           </div>
 
-          <!-- review & business overview -->
-          <div id="review-overview" class="business-overview border p-3 mt-3 bg-light">
-            <!-- review part -->
-            <div class="review m-3 p-4 bg-white shadow-sm">
-              <div class="row">
-                <div class="col-6">
-                  <img src="assets/images/av-1.png" alt="">  <span class="h5 text-primary"><a href="#">Write a Review</a></span>
+
+          <!-- review part -->
+          <div id="review" class="review mt-3 p-4 border bg-white shadow-sm">
+            <div class="row">
+              <div class="col-sm-6">
+                <form action="" method="get">
+                  <div class="row">
+                    <div class="col img-col">
+                      <img src="assets/images/av-2.png" class="mt-4" alt="">
+                    </div>
+                    <div class="col">
+                      <ul class="rate-area text-start float-start mt-2">
+                        <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Amazing">5 stars</label>
+                        <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Good">4 stars</label>
+                        <input type="radio" id="3-star" name="rating" value="3" /><label for="3-star" title="Average">3 stars</label>
+                        <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Not Good">2 stars</label>
+                        <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>
+                      </ul>
+                    </div>
+                    <p class="write-review-btn"><input type="submit" class="primary-btn" value="Write a review"></p>
+                  </div>
+                </form>
+              </div>
+              <div class="col-sm-6">
+                <h4>Total 126 ratings </h4>
+                
+                <div class="progress my-2 mt-3">
+                  <span class="rating-label">5 star</span> 
+                  <div class="progress-bar main-bg" role="progressbar" style="width: 25%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">25</div>
                 </div>
-                <div class="col-6 rating h2 text-end">
-                  <span><i class="bi bi-star"></i></span>
-                  <span><i class="bi bi-star"></i></span>
-                  <span><i class="bi bi-star"></i></span>
-                  <span><i class="bi bi-star"></i></span>
-                  <span><i class="bi bi-star"></i></span>
+                <div class="progress my-2">
+                  <span class="rating-label">4 star</span> 
+                  <div class="progress-bar main-bg" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+                </div>
+                <div class="progress my-2">
+                  <span class="rating-label">3 star</span> 
+                  <div class="progress-bar main-bg" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75</div>
+                </div>
+                <div class="progress my-2">
+                  <span class="rating-label">2 star</span> 
+                  <div class="progress-bar main-bg" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80</div>
+                </div>
+                <div class="progress my-2">
+                  <span class="rating-label">1 star</span> 
+                  <div class="progress-bar main-bg" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100</div>
                 </div>
               </div>
             </div>
-            <!-- title -->
-            <!-- <h3 class="p-3">LabSoft Technologies - reviews & details</h3> -->
+          </div>
 
-            <!-- business-overview -->
-            <div id="overview" class="overview m-3 border shadow-sm bg-white">
-              <h3 class="p-4">Labsoft Technologies overview</h3>
-              <hr class="mt-0">
-              <div class="content p-4">
-                <span id="read-more">
-                  <!-- business details will be execute here :) -->
-                  <h4>Why Labsoft ?</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum eum rem voluptatum. Minus eligendi suscipit itaque dolorem cupiditate est, ut aliquam sed asperiores non nostrum quibusdam excepturi delectus, earum.
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, itaque perferendis eum, sed voluptatum voluptate nobis, quod iure molestiae, non saepe aspernatur expedita sequi consequatur. Molestiae ratione, illo accusamus est.
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, omnis quos doloribus numquam provident doloremque sunt aperiam enim accusamus, repellendus? Laboriosam, dolores qui ducimus hic sed quae repudiandae dolor repellendus!
-                    <br>
-                    Lorem ipsum dolor sit, amet <strong>4.5 stars</strong> consectetur, adipisicing elit. <strong>2021</strong> Ipsam mollitia dolore minima maiores quaerat. Necessitatibus odio veritatis vero, quos culpa incidunt, facilis maxime provident corporis dignissimos harum <a href="#" class="text-primary"><strong>molestiae</strong></a> ut dolore?
-                  </p>
-                </span>
-              </div>
+          <!-- business-overview -->
+          <div id="overview" class="overview mt-3 border shadow-sm bg-white">
+            <h3 class="p-4">Labsoft Technologies overview</h3>
+            <hr class="mt-0">
+            <div class="content p-4">
+              <span id="read-more">
+                <!-- business details will be execute here in short :) -->
+                <p class="details">Lorem ipsum dolor sit, amet <strong>4.5 stars</strong> consectetur, adipisicing elit. <strong>2021</strong> Ipsam mollitia dolore minima maiores quaerat. Necessitatibus odio veritatis vero, quos culpa incidunt, facilis maxime provident corporis dignissimos harum <a href="#" class="text-primary"><strong>molestiae</strong></a> ut dolore?</p>
+              </span>
             </div>
           </div>
 
@@ -218,8 +238,20 @@
               <div class="desc-title">
                 <h3>About the business of LabSoft</h3>
               </div>
-              <p class="details py-2">Lorem ipsum dolor sit, amet <strong>4.5 stars</strong> consectetur, adipisicing elit. <strong>2021</strong> Ipsam mollitia dolore minima maiores quaerat. Necessitatibus odio veritatis vero, quos culpa incidunt, facilis maxime provident corporis dignissimos harum <a href="#" class="text-primary"><strong>molestiae</strong></a> ut dolore?</p>
-
+              <hr>
+              <span id="read-more">
+                <!-- business details will be execute here :) -->
+                <h4>Why Labsoft ?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum eum rem voluptatum. Minus eligendi suscipit itaque dolorem cupiditate est, ut aliquam sed asperiores non nostrum quibusdam excepturi delectus, earum.
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, itaque perferendis eum, sed voluptatum voluptate nobis, quod iure molestiae, non saepe aspernatur expedita sequi consequatur. Molestiae ratione, illo accusamus est.
+                  <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, omnis quos doloribus numquam provident doloremque sunt aperiam enim accusamus, repellendus? Laboriosam, dolores qui ducimus hic sed quae repudiandae dolor repellendus!
+                    <br>
+                    Lorem ipsum dolor sit, amet <strong>4.5 stars</strong> consectetur, adipisicing elit. <strong>2021</strong> Ipsam mollitia dolore minima maiores quaerat. Necessitatibus odio veritatis vero, quos culpa incidunt, facilis maxime provident corporis dignissimos harum <a href="#" class="text-primary"><strong>molestiae</strong></a> ut dolore?
+                </p>
+              </span>
               <div class="social-link">
                 <span>
                   <a href="#">
@@ -592,7 +624,7 @@
   <script src="assets/js-lib/read-more.js"></script>
   <script>
     $readMoreJS.init({
-     target: '.business-overview #read-more',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+     target: '#read-more',           // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
      numOfWords: 50,               // Number of words to initially display (any number). Default: 50
      toggle: true,                 // If true, user can toggle between 'read more' and 'read less'. Default: true
      moreLink: '<button class="btn main-color bg-white border"> <strong>Read More <i class="bi bi-chevron-down"></i></strong></button>',    // The text of 'Read more' link. Default: 'read more ...'

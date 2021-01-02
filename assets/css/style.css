@@ -622,16 +622,75 @@ ___________*/
 .business-feature .bi{
 	font-size: 15px;
 }
-.business-overview .row img{
+.review .row .img-col{
+	max-width: 80px;
+	height: 100%;
+}
+.review .row img{
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 	margin-right:20px;
 }
+.write-review-btn {
+	margin-left: 80px;
+}
+.rating-label {
+	padding-right: 8px;
+	background: white;
+}
+.progress{
+	border-radius: 5px;
+}
 .gallery-images img{
 	width: 100%;
 	height: 170px;
 	border:1px solid var(--main-color);
+}
+
+
+.rate-area {
+	/*float: left;*/
+	/*border-style: none;*/
+	padding-left: 0px;
+	font-size: 25px;
+}
+
+.rate-area:not(:checked) > input {
+	position: absolute;
+	top: -9999px;
+	clip: rect(0, 0, 0, 0);
+}
+
+.rate-area:not(:checked) > label {
+	float: right;
+	width: 0.8em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 180%;
+	color: lightgrey;
+}
+
+.rate-area:not(:checked) > label:before {
+	content: "★";
+}
+
+.rate-area > input:checked ~ label {
+	color: orange;
+}
+
+.rate-area:not(:checked) > label:hover,
+.rate-area:not(:checked) > label:hover ~ label {
+	color: orange;
+}
+
+.rate-area > input:checked + label:hover,
+.rate-area > input:checked + label:hover ~ label,
+.rate-area > input:checked ~ label:hover,
+.rate-area > input:checked ~ label:hover ~ label,
+.rate-area > label:hover ~ input:checked ~ label {
+	color: orange;
 }
 
 
