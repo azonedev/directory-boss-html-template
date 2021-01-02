@@ -2,7 +2,9 @@
 	padding:0px;margin: 0px;
 
 }
-
+.fixed-top{
+	/*margin-top:70px;*/
+}
 /*
 
 	Colors  :;
@@ -410,6 +412,8 @@ ________*/
 .accordion-collapse {
 	border: 1px solid var(--main-color) !important;
 	margin-top:-7px;
+	margin-left: 1px;
+    margin-right: 1px;
 }
 
 .accordion-button:active .accordion-button::after {
@@ -623,17 +627,18 @@ ___________*/
 	font-size: 15px;
 }
 .review .row .img-col{
-	max-width: 80px;
+	max-width: 130px;
 	height: 100%;
 }
 .review .row img{
-	width: 50px;
-	height: 50px;
+
+	width: 70px;
+	height: 70px;
 	border-radius: 50%;
-	margin-right:20px;
+	margin-left:20px;
 }
 .write-review-btn {
-	margin-left: 80px;
+	margin-left: 130px;
 }
 .rating-label {
 	padding-right: 8px;
@@ -694,6 +699,10 @@ ___________*/
 }
 
 
+/*______services of listing page_____*/
+.services li{
+	list-style-type: square;
+}
 
 
 /*-----
