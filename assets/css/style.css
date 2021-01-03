@@ -734,6 +734,36 @@ ___________*/
     border-radius: 0px 10px 10px 0px;
 }
 
+/*______ business-aniversary _______*/
+
+ul.countdown {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+ul.countdown li { display: inline-block; }
+
+ul.countdown li span {
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 80px;
+  padding: 0 20px;
+/*  border-top: 1px solid #C0392B;
+  border-bottom: 1px solid #C0392B;
+  margin-left: -4px;*/
+}
+
+ul.countdown li p {
+    padding-top: 10px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
 /*-----
 	responsive-code
 ----*/

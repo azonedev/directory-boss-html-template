@@ -331,7 +331,31 @@
                       </div>
                     </div>
                   </div>
-                  
+                  <!-- business aniversary -->
+                  <div class="business-aniversary shadow-sm border pt-3">
+                    <h3 class="title" style="font-weight: 400">Business Anniversary
+                      <div></div>
+                    </h3>
+                  <ul class="countdown">
+                    <li>
+                      <span class="days">00</span>
+                      <p class="days_ref">days</p>
+                    </li>
+                    <li>
+                      <span class="hours">00</span>
+                      <p class="hours_ref">hours</p>
+                    </li>
+                    <li>
+                      <span class="minutes">00</span>
+                      <p class="minutes_ref">minutes</p>
+                    </li>
+                    <li>
+                      <span class="seconds last">00</span>
+                      <p class="seconds_ref">seconds</p>
+                    </li>
+                  </ul>
+                  </div>
+
                   <!-- Contact info : -->
                   <div class="verified h3">
                     <div class="p-2"></div>
@@ -707,6 +731,14 @@
      moreLink: '<button class="btn main-color bg-white border"> <strong>Read More <i class="bi bi-chevron-down"></i></strong></button>',    // The text of 'Read more' link. Default: 'read more ...'
      lessLink: '<button class="btn main-color bg-white border"> <strong>Show Less <i class="bi bi-chevron-up"></i></strong></button>'         // The text of 'Read less' link. Default: 'read less'
   });
+  </script>
+
+  <script src="assets/js-lib/jquery.min.js"></script>
+  <script src="assets/js-lib/countdown.js"></script>
+  <script>
+    $('.countdown').downCount({
+      date: '12/31/2021 12:00:00'
+    });
   </script>
   <!-- main js -->
   <script src="assets/js/app.js"></script>
