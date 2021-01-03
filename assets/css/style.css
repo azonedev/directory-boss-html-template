@@ -704,6 +704,35 @@ ___________*/
 	list-style-type: square;
 }
 
+/*_______business age_________*/
+
+.business-age .value {
+    font-size: red;
+    display: block;
+    text-align: center;
+    background: var(--main-color);
+    color: var(--white);
+    font-size: 45px;
+    border-radius: 10px 0px 0px 10px;
+}
+.business-age .text-start{
+	padding: 0px;
+}
+.business-age .text-end{
+	padding-right: 0px;
+}
+.business-age .text {
+	padding-top: 13px;
+    font-size: red;
+    display: block;
+    text-align: center;
+    background: var(--white);
+    /*color: var(--main-color);*/
+    font-size: 25px;
+    height: 67px;
+    border:1px solid var(--main-color);
+    border-radius: 0px 10px 10px 0px;
+}
 
 /*-----
 	responsive-code
