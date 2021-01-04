@@ -819,6 +819,11 @@ ul.countdown li p {
 	.header-clear{
 		margin-top:-10px;
 	}
+
+	/*____single-category page____*/
+	.col.logo.logo-top {
+	    max-width: 120px !important;
+	}
 }
 
  /*Small devices (landscape phones, 576px and up)*/
