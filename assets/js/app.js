@@ -27,3 +27,13 @@ $readMoreJS.init({
 	moreLink: '<button class="btn main-color bg-white border"> <strong>Read More <i class="bi bi-chevron-down"></i></strong></button>',    // The text of 'Read more' link. Default: 'read more ...'
 	lessLink: '<button class="btn main-color bg-white border"> <strong>Show Less <i class="bi bi-chevron-up"></i></strong></button>'         // The text of 'Read less' link. Default: 'read less'
 });
+
+
+// printfor terms page 
+function terms_print(divName){
+	 var printContent = document.getElementById(divName).innerHTML;
+	 var originalContent = document.body.innerHTML;
+	 document.body.innerHTML = printContent;
+	 window.print();
+	 document.body.innerHTML = originalContent;
+}
