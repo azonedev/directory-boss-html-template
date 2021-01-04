@@ -782,6 +782,11 @@ ul.countdown li p {
     text-transform: uppercase;
 }
 
+.more-business .business-item p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
 /*-----
 	responsive-code
 ----*/
