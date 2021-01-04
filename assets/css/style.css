@@ -176,7 +176,9 @@ li{
 .header-clear{
 	height: 74px;
 }
-
+nav.navbar.navbar-expand-lg.navbar-light.container {
+    padding: 10px 0px;
+}
 /*--- full screen search option on header ---*/
 
 /* The overlay effect with black background */
