@@ -648,6 +648,12 @@ ___________*/
 	border-radius: 50%;
 	margin-left:20px;
 }
+
+.listing-menu{
+	background: #F2F2F2 !important;
+	border:1px solid #ddd;
+	font-weight: bold;
+}
 .write-review-btn {
 	margin-left: 130px;
 }
