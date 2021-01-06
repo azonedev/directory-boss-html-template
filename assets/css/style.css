@@ -167,12 +167,28 @@ li{
 	color: black !important;
 	border: 2px solid var(--main-color);
 }
+.main-outline{
+	border:1px solid var(--main-color);
+	transition: 0.3s;
+}
+.main-outline:hover{
+	background: var(--main-color);
+	color:var(--white);
+}
+.main-line{
+	background: var(--main-color);
+	color:var(--white);
+	border:1px solid var(--main-color);
+	transition: 0.3s;
+}
+.main-line:hover{
+	background: var(--white);
+	color:black;
+}
 .clear-both{
 	  clear: both;		
 }
 .comment-replay{
-	margin-left: 30px;
-	margin-top: 20px;
 	padding: 20px;
 	background: #e0dfdf40;
 	border-radius: 0px 10px 10px 0px;

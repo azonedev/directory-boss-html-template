@@ -104,7 +104,7 @@
             <div class="col text-col">
               <div class="top-text">
                 <h3 class="float-start">NY. Niloy Yakin</h3>
-                <div class="float-end text-warning dropdown text-report">
+                <div class="float-end main-color dropdown text-report">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                       Report
                     </a>
@@ -154,36 +154,53 @@
 
           <!-- review bottom actions -->
           <div class="action-group">
-            <a href="#" class="btn btn-light text-dark float-start">Comment / Replay</a>
-            <a href="#" class="btn btn-outline-primary float-end"><i class="bi bi-hand-thumbs-up"></i> Helpful (20)</a>
+            <a href="#comment" class="btn btn-light text-dark border mr-2 text-start">Comment / Replay</a>
+            <a href="#" class="btn main-outline  text-end"><i class="bi bi-hand-thumbs-up"></i> Helpful (20)</a>
           </div>
           <!-- /review bottom actions -->
-          <div class="clear-both">
+          <!-- <div class="clear-both"> -->
         </div>
         <!-- /single-review-section -->
 
-        <!-- comment/replay -->
-        <div class="comment-replay">
-          <h4>Author replied to NY. Niloy Yakin</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci provident aut iure, quisquam ab quidem dignissimos fugit quis modi animi eveniet sequi fuga dolor omnis ipsam rerum exercitationem quia accusamus!</p>
-          <a href="#" class="btn btn-outline-primary btn-sm mb-3">Replay</a>
-          <div class="replay-nested">
-            <h4> NY. Niloy Yakin replied to Author </h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci provident aut iure, quisquam ab quidem dignissimos fugit quis modi animi eveniet sequi fuga dolor omnis ipsam rerum exercitationem quia accusamus!</p>
-            <a href="#" class="btn btn-outline-primary btn-sm">Replay</a>
-          </div>
+        <!-- comment-area -->
+        <div class="comment-area shadow-sm border p-4 mt-3">
+          <!-- comment/replay -->
+            <div class="comment-replay">
+              <h4>Author replied to NY. Niloy Yakin</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci provident aut iure, quisquam ab quidem dignissimos fugit quis modi animi eveniet sequi fuga dolor omnis ipsam rerum exercitationem quia accusamus!</p>
+              <a href="#" class="btn main-outline btn-sm mb-3">Replay</a>
+              <div class="replay-nested">
+                <h4> NY. Niloy Yakin replied to Author </h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci provident aut iure, quisquam ab quidem dignissimos fugit quis modi animi eveniet sequi fuga dolor omnis ipsam rerum exercitationem quia accusamus!</p>
+                <a href="#" class="btn main-outline btn-sm">Replay</a>
+              </div>
+            </div>
+            <div class="comment-replay">
+              <h4>Jon Doe </h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci provident aut iure, quisquam ab quidem dignissimos fugit quis modi animi eveniet sequi fuga dolor omnis ipsam rerum exercitationem quia accusamus!</p>
+              <a href="#" class="btn main-outline btn-sm mb-3">Replay</a>
+            </div>
+            <!-- / comment/replay -->
         </div>
-        <div class="comment-replay">
-          <h4>Author replied to NY. Niloy Yakin</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci provident aut iure, quisquam ab quidem dignissimos fugit quis modi animi eveniet sequi fuga dolor omnis ipsam rerum exercitationem quia accusamus!</p>
-          <a href="#" class="btn btn-outline-primary btn-sm mb-3">Replay</a>
-          
+        <!-- /comment-area -->
+
+        <!-- comment-box -->
+        <div id="comment" class="comment-box mt-3 shadow-sm border p-4">
+          <h4>Leave a comment</h4>
+          <br>
+          <form action="#">
+            <textarea name="comment" id="" cols="30" rows="6" class="form-control" placeholder="Write here your comment ..."></textarea>
+            <div class="row mt-3">
+              <div class="col-sm-6"><input type="text" class="form-control" placeholder="Full Name"></div>
+              <div class="col-sm-6"><input type="text" class="form-control" placeholder="Email ex:- example@mail.com"></div>
+            </div>
+            <input type="submit" class="btn main-line mt-3" value="Post Comment">
+          </form>
         </div>
-        <!-- / comment/replay -->
-        
+        <!-- /comment-box -->
       </div>
       <div class="col-lg-3 col-0 d-lg-block d-none border">
-       
+      
       </div>
     </div>
   </section>
