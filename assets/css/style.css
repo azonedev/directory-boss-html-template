@@ -167,7 +167,9 @@ li{
 	color: black !important;
 	border: 2px solid var(--main-color);
 }
-
+.clear-both{
+	  clear: both;		
+}
 
 
 /*-----
@@ -787,6 +789,39 @@ ul.countdown li p {
 .more-business .business-item p {
     font-weight: 600;
     font-size: 20px;
+}
+
+
+/*__________single-review-page__________*/
+
+.review-top .img-col{
+	max-width: 130px;
+	height: 100%;
+}
+.review-top img{
+
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-left:20px;
+}
+.single-review-block .bottom-text i{
+	color:var(--main-color) !important;
+}
+
+.single-review-block .bottom-text .bi-calendar-check,.bi-bookmark-plus-fill{
+	padding-left: 7px;
+}
+
+.single-review-block .review-rating i{
+	font-size: 25px;
+	margin-top:10px;
+}
+
+.single-review-block .review-rating .bi-clock-history{
+	padding-left: 7px;
+	font-size: 18px;
+	color: var(--main-color);
 }
 
 /*-----
