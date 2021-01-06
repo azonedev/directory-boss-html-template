@@ -170,7 +170,19 @@ li{
 .clear-both{
 	  clear: both;		
 }
+.comment-replay{
+	margin-left: 30px;
+	margin-top: 20px;
+	padding: 20px;
+	background: #e0dfdf40;
+	border-radius: 0px 10px 10px 0px;
+}
+.comment-replay .replay-nested{
+	background: var(--white);
+	padding:20px;
+	border-radius: 0px 15px 15px 0px;
 
+}
 
 /*-----
 	Header menu styles 
