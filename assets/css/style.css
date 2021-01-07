@@ -852,6 +852,19 @@ ul.countdown li p {
 	color: var(--main-color);
 }
 
+
+/*______contact-us_______*/
+
+.about-us-box i{
+	color:var(--white);
+	font-size: 22px;
+}
+.about-us-box .icon-box{
+	background: var(--main-color);
+	padding: 20px;
+	border-radius: 50%;
+}
+
 /*-----
 	responsive-code
 ----*/
