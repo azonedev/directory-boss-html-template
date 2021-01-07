@@ -865,6 +865,19 @@ ul.countdown li p {
 	border-radius: 50%;
 }
 
+
+/*_______ blog-single ______*/
+.blog-single-block .post-credit,.blog-footer{
+	font-size: 18px;
+	font-weight: 500;
+}
+.blog-single-block .post-credit i{
+	padding-left:10px;
+	color: var(--main-color);
+}
+.blog-single-block .blog{
+	font-size: 18px;
+}
 /*-----
 	responsive-code
 ----*/
