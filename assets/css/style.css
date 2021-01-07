@@ -833,11 +833,11 @@ ul.countdown li p {
 	border-radius: 50%;
 	margin-left:20px;
 }
-.single-review-block .bottom-text i{
+.review-top .bottom-text i{
 	color:var(--main-color) !important;
 }
 
-.single-review-block .bottom-text .bi-calendar-check,.bi-bookmark-plus-fill{
+.review-top .bottom-text .bi-calendar-check,.bi-bookmark-plus-fill{
 	padding-left: 7px;
 }
 

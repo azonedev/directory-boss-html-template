@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap fonts -->
+	<link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+
+
+	<!-- main css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Directory Boss</title>
+</head>
+<body>
+
+	<header>
+		<div class="fluid shadow fixed-top bg-white py-1 fadeInDown" data-wow-delay="0.2s">
+			<nav class="navbar navbar-expand-lg navbar-light container">
+				<div class="container-fluid">
+					<!-- logo / brand-name -->
+					<a class="col-3 navbar-brand" href="#">
+						<span class="logo">
+							<div class="text">
+								<span class="h2 main-color">DirectoryBoss</span>
+							</div>
+							<!--  <div class="logo">
+								<img src="#" alt="">
+							</div> -->
+						</span>
+					</a>
+
+					<!-- collapse options -->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<!-- menu -->
+						<ul class="col-md-7 navbar-nav d-flex justify-content-center middle-menu">
+
+							<!-- middle menu -->
+							<li class="nav-item u-black"><a href="#" class="nav-link active">Write a Review</a></li>
+							<li class="nav-item u-black"><a href="#" class="nav-link active">Add Buiness</a></li>
+							<li class="nav-item u-black"><a href="#" class="nav-link active">Categories</a></li>
+              <!-- search -->
+							<li class="nav-item">
+                <a href="#" class="nav-link active fancy-link" onclick="openSearch()" id="search">
+                  <i class="bi bi-search"></i>
+                </a>
+              </li>
+              <!-- full-screen box-->
+                <div id="myOverlay" class="overlay">
+                  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
+                    <i class="bi bi-file-x"></i>
+                  </span>
+                  <div class="overlay-content">
+                    <form action="action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                  </div>
+                </div>
+              <!-- /full-scren box -->
+              <!--/ search -->
+							<!-- / middle menu -->
+
+						</ul>
+
+						<ul class="col-md-5 navbar-nav d-flex justify-content-end right-menu">
+
+							<!-- right menu -->
+							<li class="nav-item sign-in"><a href="#" class="nav-link active fancy-link underline">Sign In</a></li>
+							<li class="nav-item pl-2 sign-up"><a href="#" class="nav-link active primary-btn outline">Sign Up</a></li>
+							<!-- /right menu -->
+
+						</ul>
+						<!-- /menu -->
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+  <div class="header-clear"></div>
+
+  <!-- profile-page -->
+  <section id="proflie-page" class="container pt-5">
+    <div class="row">
+      <div class="col-lg-9 col-12">
+
+        <!-- proflie-section -->
+        <div class="profile-block shadow-sm border p-4">
+          <!-- profile top part -->
+          <div class="profile-top review-top row">
+            <div class="col img-col">
+              <img src="assets/images/av-2.png" class="my-3" alt="">
+            </div>
+            <div class="col text-col">
+              <div class="top-text">
+                <h3 class="float-start">NY. Niloy Yakin</h3>
+              </div>
+              <div class="clear-both"></div>
+              <div class="bottom-text">
+                <p>
+                  <i class="bi bi-geo-alt-fill"></i> Mirpur-10, Dhaka - 1236
+                  <i class="bi bi-calendar-check"></i> Join Date : 21-Jan, 2021
+                  <i class="bi bi-bookmark-plus-fill"></i> Review : 20
+                  <i class="bi bi-list-check"></i> Listing : 13
+                </p>
+              </div>
+              <!-- website -->
+              <button class="btn btn-small main-line"><a href="#">Website</a></button>
+            </div>
+          </div>
+          <!-- /profile-top part -->
+          <hr>
+          <!-- company list -->
+          <div class="company-list">
+            
+            <button class="btn btn-small main-outline mb-2"><a href="#">devEngineering LTD.</a></button>
+            <button class="btn btn-small main-outline mb-2"><a href="#">Strtech</a></button>
+            <button class="btn btn-small main-outline mb-2"><a href="#">SEO Master</a></button>
+            <button class="btn btn-small main-outline mb-2"><a href="#">Talk Human</a></button>
+            <button class="btn btn-small main-outline mb-2"><a href="#">Privecy Master</a></button>
+            <button class="btn btn-small main-outline mb-2"><a href="#">Engineering Lab</a></button>
+
+            <!-- social-links -->
+            <div class="social-link">
+              <!-- <span class="title-left h4 pr-4">We are also :</span> -->
+              <span>
+                <a href="#">
+                  <img src="https://img.icons8.com/cute-clipart/48/000000/instagram-new.png"/>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <img src="https://img.icons8.com/color/48/000000/facebook.png"/>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <img src="https://img.icons8.com/fluent/48/000000/pinterest.png"/>
+                </a>
+              </span>
+              <span>
+                <a href="#">
+                  <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/>
+                </a>
+              </span>
+            </div>
+          </div>
+          <!-- /company list -->
+        </div>
+        <!-- /proflie-section -->
+
+        <!-- all-reviews-from-this profile -->
+        <div class="single-review-block shadow-sm border p-4 mt-3">
+          <h3 class="title-left mb-4">All reviews from Niloy Yakin</h3>
+
+          <!-- single review of this profile -->
+            <div class="review-bottom">
+              <h3><a href="#" class="fancy-link">Services are aswome ...</a></h3>
+              <!-- review rating -->
+              <div class="review-rating">
+                <span class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <span>
+                  Niloy Yakin Given 4.5 star on DirectoryBoss
+                </span>
+                <i class="bi bi-clock-history"></i> 120 days ago
+              </div>
+              <br>
+              <!-- / review rating -->
+              <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Corporis accusamus mollitia aut ipsa, quos accusantium! Architecto incidunt enim similique, inventore rerum, numquam quia sit quidem necessitatibus, sed fuga vitae adipio incidunt enim similique, inventore rerum, numquam quia sit quidem necessitatibus, sed fuga vitae adipisci.</p>
+            </div>
+            <!-- /review bottom -->
+            <hr class="bg-white">
+
+            <!-- review bottom actions -->
+            <div class="action-group">
+              <!-- comment-btn link to single-review page -->
+              <a href="#comment" class="btn btn-light text-dark border mr-2 text-start">Comment / Replay</a>
+              <a href="#" class="btn main-outline  text-end"><i class="bi bi-hand-thumbs-up"></i> Helpful (20)</a>
+            </div>
+            <!-- /review bottom actions -->
+          <!-- /single review of this profile -->
+          <hr>
+          <!-- single review of this profile -->
+            <div class="review-bottom">
+              <h3><a href="#" class="fancy-link">Good forever what I have seen ...</a></h3>
+              <!-- review rating -->
+              <div class="review-rating">
+                <span class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <span>
+                  Muskan Given 5 star on DirectoryBoss
+                </span>
+                <i class="bi bi-clock-history"></i> 57 days ago
+              </div>
+              <br>
+              <!-- / review rating -->
+              <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Corporis accusamus mollitia aut ipsa, quos accusantium! Architecto incidunt enim similique, inventore rerum, numquam quia sit quidem necessitatibus, sed fuga vitae adipio incidunt enim similique, inventore rerum, numquam quia sit quidem necessitatibus, sed fuga vitae adipisci.</p>
+            </div>
+            <!-- /review bottom -->
+            <hr class="bg-white">
+
+            <!-- review bottom actions -->
+            <div class="action-group">
+              <!-- comment-btn link to single-review page -->
+              <a href="#comment" class="btn btn-light text-dark border mr-2 text-start">Comment / Replay</a>
+              <a href="#" class="btn main-outline  text-end"><i class="bi bi-hand-thumbs-up"></i> Helpful (76)</a>
+            </div>
+            <!-- /review bottom actions -->
+          <!-- /single review of this profile -->
+        </div>
+        <!-- /all-reviews-from-this profile -->
+
+      </div>
+      <div class="col-lg-3 col-0 d-lg-block d-none border">
+      
+      </div>
+    </div>  
+  </section>
+  <!-- /profile-page -->
+
+  <section class="padding">
+    <div class="p-4"></div>
+  </section>
+
+  <footer>
+    <div class="container footer-top">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 pt-5 footer-top-primary-col col-6">
+          <a href="#">
+            <div class="logo">
+              <div class="text">
+                <span class="h2 main-color">DirectoryBoss</span>
+              </div>
+              <!--  <div class="logo">
+                <img src="#" alt="">
+              </div> -->
+            </div>
+          </a>
+          <br>
+          <p><i class="bi bi-house"></i> St-luiesh, New-york - 3596</p>
+          <p><i class="bi bi-envelope"></i> <a href="mailto:mail@directoryboss.com" class="fency-link">Info@directoryboss.com</a></p>
+          <p><a href="#" class="fancy-link">Contact Us</a></p>
+          <p><a href="#" class="fancy-link">Tearms</a></p>
+          <p><a href="#" class="fancy-link">Privecy policy</a></p>
+
+          <br>
+
+          <div class="social-link">
+            <span>
+              <a href="#">
+                <img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                <img src="https://img.icons8.com/color/48/000000/facebook.png"/>
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 pt-5 footer-top-about-col col-6">
+          <h4>About</h4>
+          <br>
+          <p>
+            <a href="#" class="fancy-link">Our Story</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Career</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">News  </a>
+          </p>
+          <a href="#">
+            <img src="assets/images/google-play.png" height="50px" width="165px" class="google-play" alt="">
+          </a>
+          <div class="p-2"></div>
+          <a href="">
+            <img src="assets/images/apple-store.png" height="50px" width="165px" class="apple-store" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 pt-5 footer-top-for-business-col col-6">
+          <h4>For Business</h4>
+          <br>
+          <p>
+            <a href="#" class="fancy-link">Why get listed?</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Sponsers</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Pricing</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Media kit</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Good boxes</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Partner</a>
+          </p>
+          <p>
+            <a href="#" class="fancy-link">Be DriectoryBoss</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-sm-6 pt-5 footer-top-services-col col-6">
+          <h4>Services</h4>
+          <br>
+          <li>
+            <a href="#" class=" fancy-link">Moblie app development</a>
+          </li>
+          <li>
+            <a href="#" class="fancy-link">Software development</a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">Web application development</a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">e-Commerce development</a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">Blockchain Technology </a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">SEO services</a>
+          </li>
+          <li>
+            <a href="#" class=" fancy-link">Digital marketing</a>
+          </li>
+        </div>
+      </div>
+      <hr>
+      <div class="feature-buiness">
+        <h5 class="title-left">Featured Business in :</h5>
+        <div class="row">
+          <div class="col img">
+            <img src="assets/images/toyota.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/nasa.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/coca.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/tesla.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/toyota.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/coca.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/google.png" alt="">
+          </div>
+          <div class="col img">
+            <img src="assets/images/icon/idea.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-block">
+          <div class="row">
+            <div class="col footer-credit-left float-left text-start">
+              <p>All right reserved by <a href="#"class="fency-link">DirectoryBoss</a> &copy; 2020</p>
+            </div>
+            <div class="col footer-credit-right text-md-end">
+              <p>Development by <a href="#" class="fency-link">mamurjor</a></p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- main js -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
