@@ -903,6 +903,17 @@ ul.countdown li p {
 	font-size: 18px;
 }
 
+.new-single-blog li{
+	list-style-type: circle;
+	display: inline;
+}
+.new-single-blog li a{
+	list-style-type: circle;
+	text-decoration: underline;
+	/*color: #ddd;*/
+	
+}
+
 /*______team-page______*/
 .team-block img{
 	width: 150px;
