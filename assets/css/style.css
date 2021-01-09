@@ -853,6 +853,30 @@ ul.countdown li p {
 }
 
 
+/*_______Profile-page______*/
+
+.profile-picture img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	padding: 5px;
+	border:2px solid var(--main-color);
+}
+.profile-social-link .single-link{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+}
+.single-profile-info{
+	padding: 10px 0px;
+	border-bottom: 1px solid #ddd;
+}
+.single-profile-info:first-child{
+	padding-top: 0px;
+}
+.single-profile-info:last-child{
+	border-bottom: none;
+	padding-bottom: 0px;
+}
 /*______contact-us_______*/
 
 .about-us-box i{
