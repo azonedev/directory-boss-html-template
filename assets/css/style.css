@@ -569,6 +569,14 @@ ________*/
 	max-height: 230px;
 }
 
+/*______ blog _____*/
+.blog-item .blog-content{
+	text-align: justify;
+}
+.blog-item .blog-content i{
+	padding: 5px;
+	color:var(--main-color);
+}
 /*-----
 	FOOTER
 ----*/
