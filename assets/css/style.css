@@ -934,8 +934,10 @@ ul.countdown li p {
 	padding: 5px;
 	font-size: 18px;
 }
-
-
+/*_______career page_______*/
+.career td{
+	padding: 25px 0px;
+}
 /*_________Servics page__________*/
 .single-service img{
 	width: 110px;
