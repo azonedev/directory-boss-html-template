@@ -695,7 +695,7 @@ ___________*/
 	font-weight: bold;
 }
 .write-review-btn {
-	margin-left: 130px;
+	padding-left: 130px;
 }
 .rating-label {
 	padding-right: 8px;
@@ -997,8 +997,23 @@ ul.countdown li p {
 	}
 }
 
- /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
+ /*Small devices (landscape phones, 576px and low)*/
+@media (max-width: 576px) { 
+
+	/*____listing-page___*/
+	.review .row .img-col {
+		max-width: 115px;
+	}
+	.rate-area {
+		font-size: 20px;
+	}
+	.gallery-images img {
+		height: 120px;
+	}
+}
+
+ /*extra - Small devices ( phones, 400px and low)*/
+@media (max-width: 400px) { 
 
 }
 

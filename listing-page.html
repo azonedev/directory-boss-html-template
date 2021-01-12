@@ -116,16 +116,6 @@
                 <!-- reviews -->
                 <div class="p-1"></div>
                 <p class="h6">Reviews : 120</p>
-
-                <!-- btn-blocks for only small devices -->
-                <div class="btn-group d-md-none d-block">
-                   <a href="#"><button class="btn main-bg text-white my-2" style="margin-right: 5px;">Visit Website</button></a>
-                   <!-- call -->
-                  <a href="callto:0198522"><button class="btn btn-dark mx-1 my-2"><i class="bi bi-telephone-fill"></i> Call </button></a>
-                  <!-- mail -->
-                  <a href="mailto:mail@gamil.com"><button class="btn btn-outline-dark mx-1 my-2"><i class="bi bi-envelope"></i> Mail </button></a>
-                </div>
-
               </div>
               <!-- button blocks is valid until sm devices -->
               <div class="col buttons d-md-block d-none">
@@ -141,6 +131,14 @@
                 </div>
               </div>
               <!-- end of button block -->
+            </div>
+            <!-- btn-blocks for only small devices or smaller -->
+            <div class="btn-group d-md-none d-block">
+              <a href="#"><button class="btn main-bg text-white my-2" style="margin-right: 5px;">Visit Website</button></a>
+               <!-- call -->
+              <a href="callto:0198522"><button class="btn btn-dark mx-1 my-2"><i class="bi bi-telephone-fill"></i> Call </button></a>
+              <!-- mail -->
+              <a href="mailto:mail@gamil.com"><button class="btn btn-outline-dark mx-1 my-2"><i class="bi bi-envelope"></i> Mail </button></a>
             </div>
           </div>
           <div class="listing-menu bg-light text-dark">
@@ -172,7 +170,10 @@
                         <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>
                       </ul>
                     </div>
-                    <p class="write-review-btn"><input type="submit" class="primary-btn" value="Write a review"></p>
+                    <!-- <p class="write-review-btn"><input type="submit" class="primary-btn btn-inline" value="Write a review"></p> -->
+                    <div class="write-review-btn">
+                        <input type="submit" class="primary-btn btn" value="Write a review">
+                    </div>
                   </div>
                 </form>
               </div>
@@ -219,7 +220,7 @@
           <div id="services" class="services border p-4 mt-3 shadow-sm">
             <h3>Services</h3>
             <hr>
-            <div class="row">
+            <div class="row px-4">
               <li class="col-md-4 col-6 text-primary"> <a href="#">Software Engineering</a> </li>
               <li class="col-md-4 col-6 text-primary"> <a href="#">Software Development</a> </li>
               <li class="col-md-4 col-6 text-primary"> <a href="#">Cloud Hosting</a> </li>
@@ -280,17 +281,16 @@
 
           <!-- business foundation date & ages -->
           <div id="foundation" class="found-business border p-4 mt-3 shadow-sm">
-              <table class="table table-striped table-bordered ">
-                  <tr>
-                    <td width="50%">
-                      <h5>Found Date : 2004</h5>
-                    </td>
-                    <td width="50%">
-                      <h5>Domain Registration Date : 04 Jan, 2021</h5>
-                    </td>
-                  </tr>
-                </table>
-                <!-- endof age info table -->
+                <!-- business date info -->
+                <div class="row business-date p-2">
+                  <div class="col-sm-6 bg-light border p-3">
+                    <h5>Found Date : 2004</h5>
+                  </div>
+                  <div class="col-sm-6 bg-light border p-3">
+                    <h5>Domain Registration Date : 04 Jan, 2021</h5>
+                  </div>
+                </div>
+                <!-- /business date info -->
 
                 <!-- business-age -->
                   <div class="business-age">
@@ -298,7 +298,7 @@
                       <div></div>
                     </h3>
                     <div class="row text-center py-4">
-                      <div class="col-4 row row-cols-2">
+                      <div class="col-sm-4 col-6 mb-2 row row-cols-2">
                         <div class="col text-end">
                           <span class="value">15</span>
                         </div>
@@ -306,15 +306,15 @@
                           <span class="text">Year</span>
                         </div>
                       </div>
-                      <div class="col-4 row row-cols-2">
+                      <div class="col-md-4 col-6 row row-cols-2">
                         <div class="col text-end">
                           <span class="value">15</span>
                         </div>
-                        <div class="col text-start">
+                        <div class="col-md-4 col-6 text-start">
                           <span class="text">Month</span>
                         </div>
                       </div>
-                      <div class="col-4 row row-cols-2">
+                      <div class="col-md-4 col-6 row row-cols-2">
                         <div class="col text-end">
                           <span class="value">15</span>
                         </div>
@@ -357,33 +357,35 @@
               <i class="bi bi-person-lines-fill" style="font-size: 29px"></i> Contact Details :
             </div>
             <br>
-            <table class="table table-striped table-bordered">
-              <tr>
-                <td width="50%">
-                  <h5><i class="bi bi-clock-history"></i> Open today : 8:00am to 4:00pm </h5>
-                </td>
-                <td width="50%">
-                  <h5><i class="bi bi-person-lines-fill"></i> Contact Details</h5>
-                </td>
-              </tr>
-              <tr>
-                <td width="50%">
+            <div class="row">
+              <!-- opening hour -->
+              <div class="col-md-6 bg-light  border">
+                <h5 class="p-3"><i class="bi bi-clock-history"></i> Today : 8:00am to 4:00pm </h5>
+                <hr class="m-0">
+                <div class="times bg-white p-3">
                   <p>Sat 8:00 am to 4:00 pm</p>
                   <p>Sun 8:00 am to 4:00 pm</p>
                   <p>Mon 8:00 am to 4:00 pm</p>
                   <p>Tue 8:00 am to 4:00 pm</p>
                   <p>Wed 8:00 am to 4:00 pm</p>
-                </td>
-                <td width="50%">
+                </div>
+              </div>
+              <!-- /opening hour -->
+              <!-- Contact Info -->
+              <div class="col-md-6 bg-light border">
+                <h5 class="p-3"><i class="bi bi-person-lines-fill"></i> Contact Details </h5>
+                <hr class="m-0">
+                <div class="contacts bg-white p-3">
                   <p>Mail : <a href="mailto:mail@gmail.com" class="text-primary fancy-link">mail@gmail.com</a></p>
                   <p>Phone Number : +029 1698 8562</p>
                   <p>Zip code : 1208</p>
                   <p>Country Name : Bangladesh</p>
                   <p>Address : Mirpur-10, Dhaka, Bangladesh</p>
-
-                </td>
-              </tr>
-            </table>
+                </div>
+              </div>
+              <!-- /Contact Info -->
+            </div>
+            <hr class="bg-white">
             <!-- social-links -->
             <div class="social-link">
               <span class="title-left h4 pr-4">We are also :</span>
@@ -660,10 +662,16 @@
               </div>
               <div class="clear-both"></div>
               <div class="bottom-text">
-                <p>
+                <!-- until extra-small devices -->
+                <p class="d-sm-block d-none">
                   <i class="bi bi-geo-alt-fill"></i> Mirpur-10, Dhaka
                   <i class="bi bi-calendar-check"></i> Join Date : 21-Jan, 2021
                   <i class="bi bi-bookmark-plus-fill"></i> Post Review : 18-Dec, 2021
+                </p>
+                <!-- only for extra-small devices -->
+                <p class="d-sm-none d-block">
+                  <i class="bi bi-geo-alt-fill"></i> BD
+                  <i class="bi bi-bookmark-plus-fill"></i> Post : 18-Dec, 2021
                 </p>
               </div>
             </div>
