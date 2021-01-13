@@ -96,6 +96,7 @@
         <div class="single-review-block shadow-sm border p-4">
           <!-- <h3>Single Review</h3> -->
 
+
           <!-- review top part -->
           <div class="review-top row">
             <div class="col img-col">
@@ -118,10 +119,16 @@
               </div>
               <div class="clear-both"></div>
               <div class="bottom-text">
-                <p>
+                <!-- until extra-small devices -->
+                <p class="d-sm-block d-none">
                   <i class="bi bi-geo-alt-fill"></i> Mirpur-10, Dhaka
                   <i class="bi bi-calendar-check"></i> Join Date : 21-Jan, 2021
                   <i class="bi bi-bookmark-plus-fill"></i> Post Review : 18-Dec, 2021
+                </p>
+                <!-- only for extra-small devices -->
+                <p class="d-sm-none d-block">
+                  <i class="bi bi-geo-alt-fill"></i> BD
+                  <i class="bi bi-bookmark-plus-fill"></i> Post : 18-Dec, 2021
                 </p>
               </div>
             </div>
@@ -190,9 +197,9 @@
           <br>
           <form action="#">
             <textarea name="comment" id="" cols="30" rows="6" class="form-control" placeholder="Write here your comment ..."></textarea>
-            <div class="row mt-3">
-              <div class="col-sm-6"><input type="text" class="form-control" placeholder="Full Name"></div>
-              <div class="col-sm-6"><input type="text" class="form-control" placeholder="Email ex:- example@mail.com"></div>
+            <div class="row">
+              <div class="col-sm-6  mt-3"><input type="text" class="form-control" placeholder="Full Name"></div>
+              <div class="col-sm-6  mt-3"><input type="text" class="form-control" placeholder="Email ex:- example@mail.com"></div>
             </div>
             <input type="submit" class="btn main-line mt-3" value="Post Comment">
           </form>
