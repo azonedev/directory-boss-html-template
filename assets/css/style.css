@@ -765,9 +765,9 @@ ___________*/
 
 
 /*______services of listing page_____*/
-.services li{
+/* .services li{
 	list-style-type: square;
-}
+} */
 
 /*_______business age_________*/
 
@@ -1035,6 +1035,10 @@ ul.countdown li p {
 
  /*extra - Small devices ( phones, 400px and low)*/
 @media (max-width: 400px) { 
+	/* ___listing page____ */
+	.business-age-month-text{
+		width: 100px;
+	}
 	/* ____single-cateory_____ */
 	.business-item .call-text,
 	.mail-text{
