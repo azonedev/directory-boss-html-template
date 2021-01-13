@@ -29,6 +29,32 @@ $readMoreJS.init({
 });
 
 
+// listing page sticky menu
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("listing-menu");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+	navbar.classList.add("sticky-listing")
+	let header = document.getElementById('header')
+	header.style.display = "none";
+	// console.log(header);
+	
+  } else {
+	navbar.classList.remove("sticky-listing");
+	let header = document.getElementById('header')
+	header.style.display = "block";
+  }
+}
+
+
 // printfor terms page 
 function terms_print(divName){
 	 var printContent = document.getElementById(divName).innerHTML;

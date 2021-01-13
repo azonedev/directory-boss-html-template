@@ -667,7 +667,15 @@ ___________*/
 /*___________
 	Listing-page
 ___________*/
-
+.sticky-listing{
+	position: fixed;
+	/* width: 80%; */
+	z-index: 10;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	padding-left: 9%;
+}
 .listing-page-wrap{
 	max-width: 100% !important;
 	overflow: hidden;
@@ -699,6 +707,7 @@ ___________*/
 	background: #F2F2F2 !important;
 	border:1px solid #ddd;
 	font-weight: bold;
+	width: 100%;
 }
 .write-review-btn {
 	padding-left: 130px;
@@ -780,6 +789,20 @@ ___________*/
     font-size: 45px;
     border-radius: 10px 0px 0px 10px;
 }
+.business-age .value {
+	padding-top: 13px;
+	font-size: red;
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	background: var(--main-color);
+	/* color: var(--main-color); */
+	font-size: 25px;
+	height: 67px;
+	/* border: 1px solid var(--main-color);
+	border-radius: 0px 10px 10px 0px; */
+}
+
 .business-age .text-start{
 	padding: 0px;
 }
@@ -1035,17 +1058,21 @@ ul.countdown li p {
 
  /*extra - Small devices ( phones, 400px and low)*/
 @media (max-width: 400px) { 
+
 	/* ___listing page____ */
 	.business-age-month-text{
 		width: 100px;
+	}
+	.sticky-listing{
+		padding: 0px;
 	}
 	/* ____single-cateory_____ */
 	.business-item .call-text,
 	.mail-text{
 		display: none;
 	}
+	
 }
-
 
 
 

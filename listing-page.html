@@ -10,8 +10,8 @@
 	<!-- Bootstrap fonts -->
 	<link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
 
-  <!-- lity for popup player -->
-  <!-- <link rel="stylesheet" href="assets/bundle/lity/lity.min.css"> -->
+  <!-- lity for popup photo gallery -->
+  <link rel="stylesheet" href="assets/js-lib/lity/lity.min.css">
 
 	<!-- main css -->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -19,7 +19,7 @@
 </head>
 <body>
 
-	<header>
+	<header id="header">
 		<div class="fluid shadow fixed-top bg-white py-1 fadeInDown" data-wow-delay="0.2s">
 			<nav class="navbar navbar-expand-lg navbar-light container">
 				<div class="container-fluid">
@@ -141,7 +141,7 @@
               <a href="mailto:mail@gamil.com"><button class="btn btn-outline-dark mx-1 my-2"><i class="bi bi-envelope"></i> Mail </button></a>
             </div>
           </div>
-          <div class="listing-menu bg-light text-dark">
+          <div id="listing-menu" class="listing-menu bg-light text-dark">
             <ul class="nav justify-content-start pl-3">
               <li class="nav-item p-2 mx-2 fancy-link"><a href="#review">Review</a></li>
               <li class="nav-item p-2 mx-2 fancy-link"><a href="#overview">Overview</a></li>
@@ -247,11 +247,31 @@
                     <img src="assets/images/blog-1.webp" class="shadow" alt="">
                   </a>
                 </div>
-                <div class="col-md-4 col-sm-6 col-6 p-3"><img src="assets/images/blog.jpg" alt="" class="shadow"></div>
-                <div class="col-md-4 col-sm-6 col-6 p-3"><img src="assets/images/blog-3.webp" alt="" class="shadow"></div>
-                <div class="col-md-4 col-sm-6 col-6 p-3"><img src="assets/images/blog-2.webp" alt="" class="shadow"></div>
-                <div class="col-md-4 col-sm-6 col-6 p-3"><img src="assets/images/blog-2.jpg" alt="" class="shadow"></div>
-                <div class="col-md-4 col-sm-6 col-6 p-3"><img src="assets/images/blog-1.jpg" alt="" class="shadow"></div>
+                <div class="col-md-4 col-sm-6 col-6 p-3">
+                  <a href="assets/images/blog.jpg" data-lity data-lity-desc="Photo of a flower">
+                    <img src="assets/images/blog.jpg" class="shadow" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-6 p-3">
+                  <a href="assets/images/blog-3.webp" data-lity data-lity-desc="Photo of a flower">
+                    <img src="assets/images/blog-3.webp" class="shadow" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-6 p-3">
+                  <a href="assets/images/blog-2.webp" data-lity data-lity-desc="Photo of a flower">
+                    <img src="assets/images/blog-2.webp" class="shadow" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-6 p-3">
+                  <a href="assets/images/blog-2.jpg" data-lity data-lity-desc="Photo of a flower">
+                    <img src="assets/images/blog-2.jpg" class="shadow" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-6 p-3">
+                  <a href="assets/images/blog-1.jpg" data-lity data-lity-desc="Photo of a flower">
+                    <img src="assets/images/blog-1.jpg" class="shadow" alt="">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -928,6 +948,8 @@
       date: '12/31/2021 12:00:00'
     });
   </script>
+  <!-- image-gallery open on popup -->
+  <script src="assets/js-lib/lity/lity.min.js"></script>
 
   <!-- main js -->
   <script src="assets/js/app.js"></script>
