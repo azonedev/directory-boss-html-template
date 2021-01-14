@@ -34,7 +34,7 @@ $readMoreJS.init({
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("listing-menu");
+var navbar = document.getElementById("sticky-wrapper");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -43,14 +43,22 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
 	navbar.classList.add("sticky-listing")
-	let header = document.getElementById('header')
+	let header = document.getElementById('header');
+	// let featureRating = document.getElementById('feature-rating');
+	// let featureBtnGroup = document.getElementById('feature-btn-group');
 	header.style.display = "none";
+	// featureRating.style.display = "none";
+	// featureBtnGroup.style.display = "none";
 	// console.log(header);
 	
   } else {
 	navbar.classList.remove("sticky-listing");
-	let header = document.getElementById('header')
+	let header = document.getElementById('header');
+	// let featureRating = document.getElementById('feature-rating');
+	// let featureBtnGroup = document.getElementById('feature-btn-group');
 	header.style.display = "block";
+	// featureRating.style.display = "block";
+	// featureBtnGroup.style.display = "block";
   }
 }
 

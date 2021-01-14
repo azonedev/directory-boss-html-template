@@ -95,63 +95,66 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9 col-sm-12">
-
-          <!-- business-feature first section  -->
-          <div id="feature" class="business-feature border p-3">
-            <div class="row">
-              <div class="col logo">
-                <img src="assets/images/nasa.png" alt="">
-              </div>
-              <div class="col details">
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-                <!-- rating -->
-                <span class="rating">
-                  <span><i class="bi bi-star-fill"></i></span>
-                  <span><i class="bi bi-star-fill"></i></span>
-                  <span><i class="bi bi-star-fill"></i></span>
-                  <span><i class="bi bi-star-fill"></i></span>
-                  <span><i class="bi bi-star-fill"></i></span>
-                  <span class="h6"> 4.9</span>
-                </span>
-                <!-- reviews -->
-                <div class="p-1"></div>
-                <p class="h6">Reviews : 120</p>
-              </div>
-              <!-- button blocks is valid until sm devices -->
-              <div class="col buttons d-md-block d-none">
-                <div class="single-button">
-                  <a href="#"><button class="btn main-bg text-white px-3">Visit Website</button></a>
+          <!-- sticky-second-menu -->
+          <div id="sticky-wrapper">
+            <!-- business-feature first section  -->
+            <div id="feature" class="business-feature border bg-white p-3">
+              <div class="row">
+                <div class="col logo" id="feature-img">
+                  <img src="assets/images/nasa.png" alt="">
                 </div>
-                <br>
-                <div class="group-button">
-                  <!-- call -->
-                  <a href="callto:0198522"><button class="btn btn-dark btn-sm"><i class="bi bi-telephone-fill"></i> Call </button></a>
-                  <!-- mail -->
-                  <a href="mailto:mail@gamil.com"><button class="btn btn-outline-dark btn-sm"><i class="bi bi-envelope"></i> Mail </button></a>
+                <div class="col details">
+                  <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                  <!-- rating -->
+                  <div id="feature-rating">
+                    <span class="rating" >
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span><i class="bi bi-star-fill"></i></span>
+                      <span class="h6"> 4.9</span>
+                    </span>
+                    <!-- reviews -->
+                    <div class="p-1"></div>
+                    <p class="h6">Reviews : 120</p>
+                  </div>
                 </div>
+                <!-- button blocks is valid until sm devices -->
+                <div class="col buttons d-md-block d-none">
+                  <div class="single-button">
+                    <a href="#"><button class="btn main-bg text-white px-3">Visit Website</button></a>
+                  </div>
+                  <br>
+                  <div class="group-button" id="feature-btn-group">
+                    <!-- call -->
+                    <a href="callto:0198522"><button class="btn btn-dark btn-sm"><i class="bi bi-telephone-fill"></i> Call </button></a>
+                    <!-- mail -->
+                    <a href="mailto:mail@gamil.com"><button class="btn btn-outline-dark btn-sm"><i class="bi bi-envelope"></i> Mail </button></a>
+                  </div>
+                </div>
+                <!-- end of button block -->
               </div>
-              <!-- end of button block -->
+              <!-- btn-blocks for only small devices or smaller -->
+              <div class="btn-group d-md-none d-block">
+                <a href="#"><button class="btn main-bg text-white my-2" style="margin-right: 5px;">Visit Website</button></a>
+                <!-- call -->
+                <a href="callto:0198522"><button class="btn btn-dark mx-1 my-2"><i class="bi bi-telephone-fill"></i> Call </button></a>
+                <!-- mail -->
+                <a href="mailto:mail@gamil.com"><button class="btn btn-outline-dark mx-1 my-2"><i class="bi bi-envelope"></i> Mail </button></a>
+              </div>
             </div>
-            <!-- btn-blocks for only small devices or smaller -->
-            <div class="btn-group d-md-none d-block">
-              <a href="#"><button class="btn main-bg text-white my-2" style="margin-right: 5px;">Visit Website</button></a>
-               <!-- call -->
-              <a href="callto:0198522"><button class="btn btn-dark mx-1 my-2"><i class="bi bi-telephone-fill"></i> Call </button></a>
-              <!-- mail -->
-              <a href="mailto:mail@gamil.com"><button class="btn btn-outline-dark mx-1 my-2"><i class="bi bi-envelope"></i> Mail </button></a>
+            <div id="listing-menu" class="listing-menu bg-light text-dark">
+              <ul class="nav justify-content-start pl-3">
+                <li class="nav-item p-2 mx-2 fancy-link"><a href="#review">Review</a></li>
+                <li class="nav-item p-2 mx-2 fancy-link"><a href="#overview">Overview</a></li>
+                <li class="nav-item p-2 mx-2 fancy-link"><a href="#gallery">Gallery</a></li>
+                <li class="nav-item p-2 mx-2 fancy-link"><a href="#about">About</a></li>
+                <li class="nav-item p-2 mx-2 fancy-link"><a href="#contact">Info</a></li>
+                <li class="nav-item p-2 mx-2 fancy-link"><a href="#faq">FAQ</a></li>
+              </ul>
             </div>
           </div>
-          <div id="listing-menu" class="listing-menu bg-light text-dark">
-            <ul class="nav justify-content-start pl-3">
-              <li class="nav-item p-2 mx-2 fancy-link"><a href="#review">Review</a></li>
-              <li class="nav-item p-2 mx-2 fancy-link"><a href="#overview">Overview</a></li>
-              <li class="nav-item p-2 mx-2 fancy-link"><a href="#gallery">Gallery</a></li>
-              <li class="nav-item p-2 mx-2 fancy-link"><a href="#about">About</a></li>
-              <li class="nav-item p-2 mx-2 fancy-link"><a href="#contact">Info</a></li>
-              <li class="nav-item p-2 mx-2 fancy-link"><a href="#faq">FAQ</a></li>
-            </ul>
-          </div>
-
           <!-- review part -->
           <div id="review" class="review mt-3 p-4 border bg-white shadow-sm">
             <div class="row">
@@ -445,10 +448,10 @@
             </div>
             <br>
             <div class="row">
-              <div class="col-md-3 col-6"><a href="mailto:mail@gmail.com" class="fency-link"><i class="bi bi-envelope-fill"></i> mail@gmail.com</a></div>
-              <div class="col-md-3 col-6"><a href="callto:01285744585" class="fency-link"><i class="bi bi-telephone-fill"></i> +012 36 45 75</a></div>
-              <div class="col-md-3 col-6"><a href="#" class="fency-link"><i class="bi bi-arrows-angle-expand"></i> directoryBoss.com</a></div>
-              <div class="col-md-3 col-6"><a href="#" class="fency-link"><i class="bi bi-geo-alt-fill"></i> Mirpur-10, Dhaka</a></div>
+              <div class="col-md-3 col-sm-6 col-12 py-1"><a href="mailto:mail@gmail.com" class="fency-link"><i class="bi bi-envelope-fill"></i> mail@gmail.com</a></div>
+              <div class="col-md-3 col-sm-6 col-12 py-1"><a href="callto:01285744585" class="fency-link"><i class="bi bi-telephone-fill"></i> +012 36 45 75</a></div>
+              <div class="col-md-3 col-sm-6 col-12 py-1"><a href="#" class="fency-link"><i class="bi bi-arrows-angle-expand"></i> directoryBoss.com</a></div>
+              <div class="col-md-3 col-sm-6 col-12 py-1"><a href="#" class="fency-link"><i class="bi bi-geo-alt-fill"></i> Mirpur-10, Dhaka</a></div>
             </div>
           </div>
 

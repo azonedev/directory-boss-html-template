@@ -673,12 +673,27 @@ ___________*/
 ___________*/
 .sticky-listing{
 	position: fixed;
-	/* width: 80%; */
+	width: 100%;
 	z-index: 10;
 	top: 0;
 	left: 0;
-	padding: 10px;
-	padding-left: 9%;
+	/* padding: 10px; */
+	/* padding-left: 9%; */
+}
+.sticky-listing #feature{
+	/* width: 100%; */
+	/* background:white; */
+	/* padding-left: 9% !important; */
+	/* padding-right: 9% !important; */
+	/* width:90% !important; */
+	/* padding:0px 50px !important; */
+	padding-bottom:0px !important;
+}
+.sticky-listing .logo{
+	max-width: 70px !important;
+}
+.sticky-listing .details{
+	font-size:25px !important;
 }
 .listing-page-wrap{
 	max-width: 100% !important;
@@ -1083,6 +1098,9 @@ ul.countdown li p {
 	}
 	.sticky-listing{
 		padding: 0px;
+	}
+	.sticky-listing #feature{
+		display: none;
 	}
 	/* ____single-cateory_____ */
 	.business-item .call-text,
