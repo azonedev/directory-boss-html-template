@@ -101,7 +101,7 @@
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-heading-1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapseOne">
+                <button class="accordion-button" id="accrodion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapseOne">
                   Category Item #1 
                 </button>
               </h2>
@@ -701,7 +701,38 @@
 	<!-- Bootstrap Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script>
+    
+  // Create a condition that targets viewports at least 768px wide
+  const mediaQuery = window.matchMedia('(max-width: 991px)')
 
+  function handleTabletChange(e) {
+    // Check if the media query is true
+    if (e.matches) {
+      var addCollaspe = document.getElementsByClassName('accordion-button');
+      var i;
+      for (i = 0; i < addCollaspe.length; i++) 
+      {
+        addCollaspe[i].className += ' collapsed'; // WITH space added
+      }
+      var removeCollaspe = document.getElementsByClassName('accordion-collapse');
+      var i;
+      for (i = 0; i < removeCollaspe.length; i++) 
+      {
+        removeCollaspe[i].classList.remove("show"); // WITH space added
+      }
+      
+    }else{
+      console.log("Media query un-macged!");
+    }
+  }
+
+  // Register event listener
+  mediaQuery.addListener(handleTabletChange)
+
+  // Initial check
+  handleTabletChange(mediaQuery)
+  </script>
   <!-- main js -->
   <script src="assets/js/app.js"></script>
 </body>

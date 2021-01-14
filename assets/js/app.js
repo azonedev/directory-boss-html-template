@@ -71,3 +71,6 @@ function terms_print(divName){
 	 window.print();
 	 document.body.innerHTML = originalContent;
 }
+
+
+
