@@ -17,7 +17,7 @@
 </head>
 <body>
 
-	<header>
+	<header id="header">
 		<div class="fluid shadow fixed-top bg-white py-1 fadeInDown" data-wow-delay="0.2s">
 			<nav class="navbar navbar-expand-lg navbar-light container">
 				<div class="container-fluid">
@@ -41,45 +41,62 @@
 
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<!-- menu -->
-						<ul class="col-md-7 navbar-nav d-flex justify-content-center middle-menu">
+						<ul class="col-md-6 navbar-nav d-flex justify-content-center middle-menu">
+
+              <!-- profile for sm devices -->
+              <!-- <a href="#"><img src="assets/images/av-1.png" class="av-progile d-md-none d-block" alt=""></a> --> 
+
+              <a href="#"  class="d-md-none d-block"><img src="https://img.icons8.com/bubbles/50/000000/login.png"/> Sign In</a>
+              <a href="#" class=" d-md-none d-block"><img src="https://img.icons8.com/bubbles/50/000000/create-new.png"/> Sign Up</a>
+
 
 							<!-- middle menu -->
 							<li class="nav-item u-black"><a href="#" class="nav-link active">Write a Review</a></li>
 							<li class="nav-item u-black"><a href="#" class="nav-link active">Add Buiness</a></li>
 							<li class="nav-item u-black"><a href="#" class="nav-link active">Categories</a></li>
-              <!-- search -->
-							<li class="nav-item">
-                <a href="#" class="nav-link active fancy-link" onclick="openSearch()" id="search">
-                  <i class="bi bi-search"></i>
-                </a>
-              </li>
-              <!-- full-screen box-->
-                <div id="myOverlay" class="overlay">
-                  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
-                    <i class="bi bi-file-x"></i>
-                  </span>
-                  <div class="overlay-content">
-                    <form action="action_page.php">
-                      <input type="text" placeholder="Search.." name="search">
-                      <button type="submit"><i class="bi bi-search"></i></button>
-                    </form>
-                  </div>
-                </div>
-              <!-- /full-scren box -->
-              <!--/ search -->
-							<!-- / middle menu -->
 
+
+							<!-- / middle menu -->
 						</ul>
 
-						<ul class="col-md-5 navbar-nav d-flex justify-content-end right-menu">
+            <!-- search -->
+						<ul class="col-md-2 navbar-nav">
+              
+              <!-- search -->
+              <li class="nav-item text-center">
+                <a href="#" class="nav-link active" onclick="openSearch()" id="search">
+                  <img src="https://img.icons8.com/nolan/35/search.png"/> Search
+                </a>
+              </li>
+              <!-- /search -->
+              <!-- full-screen box-->
+              <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
+                  <i class="bi bi-file-x"></i>
+                </span>
+                <div class="overlay-content">
+                  <form action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                  </form>
+                </div>
+              </div>
+            <!-- /full-scren box -->
+            <!--/ search -->
+						</ul>
+            <!-- /menu -->
 
+            <!-- this login&singup menu only for larger than sm devices -->
+						<ul class="col-md-4 navbar-nav justify-content-end right-menu d-md-flex d-none">
 							<!-- right menu -->
 							<li class="nav-item sign-in"><a href="#" class="nav-link active fancy-link underline">Sign In</a></li>
 							<li class="nav-item pl-2 sign-up"><a href="#" class="nav-link active primary-btn outline">Sign Up</a></li>
 							<!-- /right menu -->
-
+            <!--/login&singup menu only for larger than sm devices -->
 						</ul>
-						<!-- /menu -->
+            <!-- /menu -->
+
+
 					</div>
 				</div>
 			</nav>
